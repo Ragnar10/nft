@@ -1,9 +1,10 @@
 @import 'scss/reset';
 @import 'scss/fonts';
 @import 'scss/variables';
+@import 'scss/mixins';
 
 html, body {
-    font-family: OpenSans, sans-serif;
+    font-family: Exo, sans-serif;
     font-style: normal;
     font-weight: normal;
 }

@@ -1,0 +1,50 @@
+@import '../../theme/scss/mixins';
+
+.header {
+
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_item {
+    margin: 0 15px;
+}
+
+.nav_link {
+    display: block;
+    color: var(--main-color);
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav_link:hover {
+    font-weight: 700;
+    color: var(--btn-color);
+    border-bottom: 1px solid var(--btn-color);
+    transition: .5s border-bottom;
+}
+
+.btn {
+    @include btn(var(--btn-color), var(--turquoise-bshadow));
+    margin: 0 54px 0 25px;
+}
