@@ -1,0 +1,46 @@
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    & > div {
+        display: flex;
+        align-items: center;
+        width: var(--container-width);
+        margin: 0 auto;
+        padding-right: 246px;
+    }
+}
+
+.footer_logo {
+    width: 163px;
+    height: 60px;
+    margin-right: auto;
+
+    img {
+        display: inline-block;
+        width: 163px;
+        height: 60px;
+    }
+}
+
+.footer_socials {
+    position: absolute;
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.socials_list {
+    padding: 20px 26px;
+
+    li {
+        margin-right: 30px;
+    }
+
+    & > li:last-child {
+        margin-right: 0;
+    }
+}

@@ -1,14 +1,18 @@
 // Styles
 import Styles from './styles.module.scss';
-import Header from "../Header";
-import Banner from "../Banner";
 // Components
+import Header from '../Header';
+import Banner from '../Banner';
+import Footer from '../Footer';
 
 const Main = () => {
     return (
         <div className = { Styles.container }>
             <Header />
-            <Banner />
+            <main className = { Styles.main }>
+                <Banner />
+            </main>
+            <Footer />
         </div>
     );
 };

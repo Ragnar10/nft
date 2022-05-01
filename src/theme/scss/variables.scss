@@ -4,6 +4,7 @@
     --main-gradient-bgcolor: linear-gradient(180deg, rgba(23, 20, 41, 0) 0%, #171429 100%);
     --pink-bgcolor: linear-gradient(90deg, #FAB7FE 0%, #57C3FF 100.87%);
     --purpur-bgcolor: linear-gradient(0deg, #FAB7FE -31.98%, #5B4CBE 100%);
+    --purpur90-bgcolor: linear-gradient(90deg, #FAB7FE -31.98%, #5B4CBE 100%);
     --btn-bgcolor: linear-gradient(95.09deg, #554E5E 0%, #393049 101.68%);
     --benefits-bgcolor: linear-gradient(180deg, #444689 -41.46%, rgba(6, 6, 9, 0) 100%);
     --card-bgcolor: rgba(0, 0, 0, 0.3);
@@ -32,7 +33,7 @@
     --large-title-fsize: 100px;
     --ribbon-fsize: 40px;
     /* dimensions */
-    --container: 1200px;
+    --container-width: 1200px;
     --btn-bradius: 7px;
     --card-bradius: 20px;
     --menu-bradius: 10px;
