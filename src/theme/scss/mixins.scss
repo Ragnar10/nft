@@ -1,16 +1,16 @@
 @mixin btn($color, $boxShadow) {
+    position: relative;
     display: inline-block;
-    background: linear-gradient(95.09deg, #554E5E 0%, #393049 101.68%);
-    box-shadow: $boxShadow;
     width: 150px;
     height: 36px;
-    border-radius: 7px;
-    text-align: center;
-    position: relative;
-    font-weight: 700;
-    font-size: 18px;
-    color: $color;
     border: none;
+    border-radius: 7px;
+    box-shadow: $boxShadow;
+    font-family: Exo_Bold, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: $color;
+    background: linear-gradient(95.09deg, #554E5E 0%, #393049 101.68%);
     cursor: pointer;
 
     &:before {
@@ -18,10 +18,10 @@
         position: absolute;
         top: -4px;
         left: -4px;
-        border: 1px solid $color;
-        box-sizing: border-box;
-        border-radius: 10px;
         width: 158px;
         height: 44px;
+        border: 1px solid $color;
+        border-radius: 10px;
+        box-sizing: border-box;
     }
 }

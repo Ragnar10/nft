@@ -9,14 +9,11 @@
 }
 
 .wrapper {
-    background: url("../../theme/assets/images/texture_back.png")left top no-repeat, url("../../theme/assets/images/main_bg.png") right top no-repeat;
+    background: url('../../theme/assets/images/texture_back_main.png') left top no-repeat,
+                url('../../theme/assets/images/main_bg.png') right top no-repeat;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-}
-
-.banner_container {
-    background: url("../../theme/assets/images/main_bg.png") no-repeat right;
 }
