@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.wrapper {
+    background: url("../../theme/assets/images/texture_back.png")left top no-repeat, url("../../theme/assets/images/main_bg.png") right no-repeat;
+}
+
 .main {
     display: flex;
     flex-direction: column;

@@ -8,10 +8,12 @@ import Footer from '../Footer';
 const Main = () => {
     return (
         <div className = { Styles.container }>
-            <Header />
-            <main className = { Styles.main }>
-                <Banner />
-            </main>
+            <div className = { Styles.wrapper }>
+                <Header />
+                <main className = { Styles.main }>
+                    <Banner />
+                </main>
+            </div>
             <Footer />
         </div>
     );
