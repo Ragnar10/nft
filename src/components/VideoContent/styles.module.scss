@@ -1,0 +1,74 @@
+@import '../../theme/scss/mixins';
+
+.video_content {
+    padding: 34px 0 114px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caption {
+    margin-bottom: 14px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.info {
+    width: 48%;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.video_wrap {
+    position: relative;
+    width: 100%;
+    max-width: 996px;
+    border: 1px solid #646464;
+    border-radius: 20px;
+    background: #232323;
+
+    .circles {
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        display: flex;
+
+        div:first-child {
+            background: #E96B5F;
+        }
+
+        div:last-child {
+            background: #6ABD60;
+        }
+
+        div {
+            width: 14px;
+            height: 14px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: #F6BD4C;
+        }
+    }
+}
+
+.video_ratio {
+    padding-top: 56.25%;
+    height: 0;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 46px 20px 20px;
+}

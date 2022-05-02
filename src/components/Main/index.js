@@ -4,6 +4,7 @@ import Styles from './styles.module.scss';
 import Header from '../Header';
 import Banner from '../Banner';
 import Footer from '../Footer';
+import VideoContent from "../VideoContent";
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
                 <Header />
                 <main className = { Styles.main }>
                     <Banner />
+                    <VideoContent />
                 </main>
             </div>
             <Footer />
