@@ -40,16 +40,18 @@ const About = () => {
             </div>
             <div className = { Styles.line_wrap }>
                 <div className = { Styles.line_thin }>
-                    <span>{ 'TORNADO EXPRESS CARD - ' }</span>
-                    <span>{ 'Ron Bielecki ' }</span>
-                    <span>{ '- Exclusive Membership - TORNADO EXPRESS CARD - ' }</span>
-                    <span>{ 'Ron Bielecki ' }</span>
-                    <span>{ '- Exclusive Membership - ' }</span>
-                    <span>{ 'TORNADO EXPRESS CARD - ' }</span>
-                    <span>{ 'Ron Bielecki ' }</span>
-                    <span>{ '- Exclusive Membership - TORNADO EXPRESS CARD - ' }</span>
-                    <span>{ 'Ron Bielecki ' }</span>
-                    <span>{ '- Exclusive Membership - ' }</span>
+                    <div>
+                        <span>{ 'TORNADO EXPRESS CARD - ' }</span>
+                        <span>{ 'Ron Bielecki ' }</span>
+                        <span>{ '- Exclusive Membership - TORNADO EXPRESS CARD - ' }</span>
+                        <span>{ 'Ron Bielecki ' }</span>
+                        <span>{ '- Exclusive Membership - ' }</span>
+                        <span>{ 'TORNADO EXPRESS CARD - ' }</span>
+                        <span>{ 'Ron Bielecki ' }</span>
+                        <span>{ '- Exclusive Membership - TORNADO EXPRESS CARD - ' }</span>
+                        <span>{ 'Ron Bielecki ' }</span>
+                        <span>{ '- Exclusive Membership - ' }</span>
+                    </div>
                 </div>
             </div>
             <div className = { Styles.bg_texture } />

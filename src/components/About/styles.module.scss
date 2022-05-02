@@ -1,5 +1,3 @@
-@import '../../theme/scss/mixins';
-
 .about {
     position: relative;
     margin-bottom: 52px;
@@ -217,6 +215,10 @@
     background: linear-gradient(90deg, #FAB7FE 0%, #5B4CBE 100.87%);
     overflow: hidden;
 
+    & > div {
+        animation: scroll 20s infinite linear;
+    }
+
     span {
         white-space: nowrap;
     }
@@ -227,5 +229,14 @@
     & span:nth-child(8) {
         font-family: Exo_Bold, sans-serif;
         text-transform: uppercase;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(-120%, 0)
     }
 }

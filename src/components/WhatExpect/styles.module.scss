@@ -1,0 +1,11 @@
+.what_expect {
+    position: relative;
+    padding: 52px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}

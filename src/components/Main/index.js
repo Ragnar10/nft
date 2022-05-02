@@ -6,6 +6,7 @@ import Banner from '../Banner';
 import Footer from '../Footer';
 import VideoContent from '../VideoContent';
 import About from '../About';
+import WhatExpect from '../WhatExpect';
 
 const Main = () => {
     return (
@@ -16,6 +17,7 @@ const Main = () => {
                     <Banner />
                     <VideoContent />
                     <About />
+                    <WhatExpect />
                 </main>
             </div>
             <Footer />
