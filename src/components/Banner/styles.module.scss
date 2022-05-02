@@ -1,12 +1,67 @@
-.banner {
+@import '../../theme/scss/mixins';
 
+.banner {
+    padding: 114px 0;
 }
 
 .container {
-    max-width: var(--container);
+    max-width: var(--container-width);
     margin: 0 auto;
-    padding: 114px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.banner_wrap {
+    width: 50%;
+}
+
+.caption {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 100;
+    color: var(--btn-color);
+    margin-bottom: 33px;
+}
+
+.info {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    @include btn(var(--btn-color), var(--turquoise-bshadow));
+    width: 192px;
+    margin-right: 28px;
+    &:before {
+        width: 200px;
+    }
+}
+
+.btn_opensea {
+    @include btn(var(--blue-color), var(--blue-bshadow));
+    width: 120px;
+    &:before {
+        width: 128px;
+    }
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 102%;
+    margin-left: -2px;
+    font-size: 40px;
+    transform: rotate(-2deg);
+    background: linear-gradient(90deg, #FAB7FE 0%, #57C3FF 100.87%);
+    overflow: hidden;
+
+    &_text {
+        white-space: nowrap;
+    }
 }

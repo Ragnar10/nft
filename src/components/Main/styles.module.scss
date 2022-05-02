@@ -5,9 +5,14 @@
     min-height: 100vh;
     background: var(--main-bgcolor);
     color: var(--main-color);
+    overflow: hidden;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+}
+
+.banner_container {
+    background: url("../../theme/assets/images/main_bg.png") no-repeat right;
 }
