@@ -72,7 +72,6 @@ const FAQ = () => {
                             })
                         }
                     </div>
-                    <div className = { Styles.texture } />
                 </div>
             </div>
             <div className = { Styles.line_wrap }>

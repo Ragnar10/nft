@@ -1,9 +1,18 @@
 .faq {
     position: relative;
     margin-bottom: 60px;
-    padding: 52px 0 300px;
+    padding: 52px 0 250px;
     min-height: 670px;
-    background: url('../../theme/assets/images/faq_bg.webp') no-repeat 100% 52px;
+    background: url('../../theme/assets/images/question.svg') no-repeat calc(50% + 156px) 52px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('../../theme/assets/images/faq_bg.webp') no-repeat 100% 0;
+        opacity: 0.8;
+    }
 }
 
 .bg_texture {
@@ -67,6 +76,11 @@
 .questions_list {
     display: flex;
     flex-direction: column;
+    height: 560px;
+
+    & .question:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .question {
@@ -129,7 +143,7 @@
 
 .line_wrap {
     position: relative;
-    bottom: -150px;
+    bottom: -50px;
     z-index: 10;
 }
 

@@ -90,6 +90,10 @@
     background: linear-gradient(90deg, #FAB7FE 0%, #5B4CBE 100.87%);
     overflow: hidden;
 
+    & > div {
+        animation: scrollThin 30s infinite linear;
+    }
+
     span {
         white-space: nowrap;
     }
@@ -111,6 +115,10 @@
     background: linear-gradient(90deg, #FAB7FE 0%, #57C3FF 100.87%);
     overflow: hidden;
 
+    & > div {
+        animation: scroll 20s infinite linear;
+    }
+
     span {
         white-space: nowrap;
     }
@@ -118,5 +126,23 @@
     & span:nth-child(2),
     & span:nth-child(4) {
         font-family: Exo_Bold, sans-serif;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(-120%, 0)
+    }
+}
+
+@keyframes scrollThin {
+    0% {
+        transform: translate(-210%, 0);
+    }
+    100% {
+        transform: translate(100%, 0)
     }
 }
