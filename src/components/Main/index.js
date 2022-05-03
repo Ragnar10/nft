@@ -7,7 +7,7 @@ import Footer from '../Footer';
 import VideoContent from '../VideoContent';
 import About from '../About';
 import WhatExpect from '../WhatExpect';
-import Steps from "../Steps";
+import Steps from '../Steps';
 
 const Main = () => {
     return (

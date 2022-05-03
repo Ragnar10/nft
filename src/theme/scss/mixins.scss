@@ -7,7 +7,7 @@
     border-radius: 7px;
     box-shadow: $boxShadow;
     font-family: Exo_Bold, sans-serif;
-    font-size: 18px;
+    font-size: var(--main-fsize);
     text-align: center;
     color: $color;
     background: linear-gradient(95.09deg, #554E5E 0%, #393049 101.68%);
