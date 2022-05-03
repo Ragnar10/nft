@@ -8,7 +8,8 @@ import VideoContent from '../VideoContent';
 import About from '../About';
 import WhatExpect from '../WhatExpect';
 import Steps from '../Steps';
-import Connect from "../Connect";
+import FAQ from '../FAQ';
+import Connect from '../Connect';
 
 const Main = () => {
     return (
@@ -21,6 +22,7 @@ const Main = () => {
                     <About />
                     <WhatExpect />
                     <Steps />
+                    <FAQ />
                     <Connect />
                 </main>
             </div>
