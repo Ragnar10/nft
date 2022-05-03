@@ -1,0 +1,188 @@
+@import '../../theme/scss/mixins';
+
+.steps {
+    padding-bottom: 54px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.caption {
+    margin-bottom: 11px;
+    font-family: Exo_Black, sans-serif;
+    font-size: 50px;
+}
+
+.info {
+    width: 48%;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.steps_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.border {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 200px;
+    height: 134px;
+    border-radius: 26px;
+    box-sizing: border-box;
+}
+
+.border:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 200px;
+    height: 133px;
+    box-sizing: border-box;
+    border-radius: inherit;
+    background: #171429;
+}
+
+.first_wrap {
+    .number {
+        color: var(--red-color);
+    }
+    .border {
+        background: linear-gradient(135deg, rgba(255, 101, 101, 0) 70%, rgba(255, 101, 101, .8));
+    }
+}
+
+.second_wrap {
+    .number {
+        color: var(--title-color);
+    }
+    .border {
+        background: linear-gradient(135deg, rgba(250, 183, 254, 0) 70%, rgba(250, 183, 254, .8));
+    }
+}
+
+.third_wrap {
+    .number {
+        color: var(--btn-color);
+    }
+    .border {
+        background: linear-gradient(135deg, rgba(137, 222, 255, 0) 70%, rgba(137, 222, 255, .8));
+    }
+}
+
+.fourth_wrap {
+    .number {
+        color: var(--blue-color);
+    }
+    .border {
+        background: linear-gradient(135deg, rgba(32, 129, 226, 0) 70%, rgba(32, 129, 226, .8));
+    }
+}
+
+.fifth_wrap {
+    .number {
+        color: var(--purple-color);
+    }
+    .border {
+        background: linear-gradient(135deg, rgba(114, 137, 218, 0) 70%, rgba(114, 137, 218, .8));
+    }
+}
+
+.btn {
+    margin: -10px auto 0;
+    z-index: 6;
+
+    a {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.btn_youtube {
+    @include btn(var(--red-color), var(--red-bshadow));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        background: url('../../theme/assets/icons/youtube_logo.svg') center no-repeat;
+    }
+}
+
+.btn_connect {
+    @include btn(var(--title-color), var(--pink-bshadow));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_mint {
+    @include btn(var(--btn-color), var(--turquoise-bshadow));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_openSea {
+    @include btn(var(--blue-color), var(--blue-bshadow));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        background: url('../../theme/assets/icons/opensea_logo.svg') center no-repeat;
+    }
+}
+
+.btn_discord {
+    @include btn(var(--purple-color), var(--purple-bshadow));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        background: url('../../theme/assets/icons/discord-logo.svg') center no-repeat;
+    }
+}
+
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 134px;
+    font-family: 'OpenSans_Bold', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    z-index: 5;
+}
+
+.number {
+    position: relative;
+    margin-bottom: -38px;
+    font-family: 'Exo_Thin', sans-serif;
+    font-size: 100px;
+    z-index: 6;
+}

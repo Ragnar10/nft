@@ -7,6 +7,7 @@ import Footer from '../Footer';
 import VideoContent from '../VideoContent';
 import About from '../About';
 import WhatExpect from '../WhatExpect';
+import Steps from "../Steps";
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
                     <VideoContent />
                     <About />
                     <WhatExpect />
+                    <Steps />
                 </main>
             </div>
             <Footer />
