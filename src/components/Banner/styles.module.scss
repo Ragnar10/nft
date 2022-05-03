@@ -134,15 +134,15 @@
         transform: translate(100%, 0);
     }
     100% {
-        transform: translate(-120%, 0)
+        transform: translate(-135%, 0)
     }
 }
 
 @keyframes scrollThin {
     0% {
-        transform: translate(-210%, 0);
+        transform: translate(100%, 0);
     }
     100% {
-        transform: translate(100%, 0)
+        transform: translate(-210%, 0)
     }
 }
