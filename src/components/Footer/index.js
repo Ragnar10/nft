@@ -9,7 +9,7 @@ import Socials from '../Socials';
 const Footer = () => {
     const { width } = getComputedStyle(document.body);
     const paddingRight = (parseFloat(width) - 1200) / 2;
-    const style = { width: 246 + paddingRight };
+    // const style = { width: 246 + paddingRight };
 
     return (
         <footer id = 'footer' className = { Styles.footer }>
@@ -21,8 +21,7 @@ const Footer = () => {
             </div>
             <Socials
                 classWrapper = { Styles.footer_socials }
-                classList = { Styles.socials_list }
-                style = { style } />
+                classList = { Styles.socials_list }/>
         </footer>
     );
 };

@@ -8,7 +8,7 @@ import Nav from '../Nav';
 const Header = () => {
     return (
         <header className = { Styles.header }>
-            <div>
+            <div className = { Styles.container }>
                 <div className = { Styles.header_logo }>
                     <img src = { logo } alt = 'logo' />
                 </div>

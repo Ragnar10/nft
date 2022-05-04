@@ -2,6 +2,8 @@
 import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
+//Images
+import question from '../../theme/assets/images/question.svg';
 
 const Question = ({ info }) => {
     const [toggle, setToggle] = useToggle();
@@ -72,6 +74,9 @@ const FAQ = () => {
                             })
                         }
                     </div>
+                </div>
+                <div className = { Styles.qa_icon }>
+                    <img src = { question } alt=""/>
                 </div>
             </div>
             <div className = { Styles.line_wrap }>

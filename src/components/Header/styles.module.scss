@@ -4,13 +4,13 @@
     display: flex;
     align-items: center;
     padding: 50px 0 30px;
+}
 
-    & > div {
-        display: flex;
-        align-items: center;
-        width: var(--container-width);
-        margin: 0 auto;
-    }
+.container {
+    display: flex;
+    align-items: center;
+    width: var(--container-width);
+    margin: 0 auto;
 }
 
 .header_logo {
@@ -28,4 +28,10 @@
 .btn {
     @include btn(var(--btn-color), var(--turquoise-bshadow));
     margin: 0 50px 0 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1333px) {
+    .container {
+        margin: 0 65px;
+    }
 }

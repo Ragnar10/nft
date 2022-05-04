@@ -31,6 +31,7 @@
     margin-bottom: 11px;
     font-family: Exo_Black, sans-serif;
     font-size: var( --main-title-fsize);
+    z-index: 1;
 }
 
 .info {
@@ -39,6 +40,7 @@
     font-size: var(--main-fsize);
     line-height: 25px;
     text-align: center;
+    z-index: 1;
 }
 
 .steps_wrap {
@@ -62,6 +64,7 @@
     height: 134px;
     border-radius: 26px;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .border:before {
@@ -205,4 +208,10 @@
     font-family: 'Exo_Thin', sans-serif;
     font-size: 100px;
     z-index: 6;
+}
+
+@media (min-width: 768px) and (max-width: 1333px) {
+    .container {
+        margin: 0 65px;
+    }
 }

@@ -160,3 +160,9 @@
     font-size: var(--secondary-fsize);
     line-height: 19px;
 }
+
+@media (min-width: 768px) and (max-width: 1333px) {
+    .container {
+        margin: 0 65px;
+    }
+}

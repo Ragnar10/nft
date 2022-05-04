@@ -3,7 +3,7 @@
     margin-bottom: 60px;
     padding: 52px 0 250px;
     min-height: 670px;
-    background: url('../../theme/assets/images/question.svg') no-repeat calc(50% + 156px) 52px;
+    //background: url('../../theme/assets/images/question.svg') no-repeat calc(50% + 156px) 52px;
 
     &::before {
         content: '';
@@ -13,6 +13,13 @@
         background: url('../../theme/assets/images/faq_bg.webp') no-repeat 100% 0;
         opacity: 0.8;
     }
+}
+
+.qa_icon {
+    align-self: flex-start;
+    width: 18%;
+    text-align: end;
+    opacity: .1;
 }
 
 .bg_texture {
@@ -184,5 +191,11 @@
     }
     100% {
         transform: translate(-125%, 0)
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1333px) {
+    .container {
+        margin: 0 65px;
     }
 }
