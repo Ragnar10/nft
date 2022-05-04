@@ -6,7 +6,7 @@ import photo2 from '../../theme/assets/images/about_img2.svg';
 
 const About = () => {
     return (
-        <section className = { Styles.about }>
+        <section id = { 'about' } className = { Styles.about }>
             <div className = { Styles.container }>
                 <div className = { Styles.photos }>
                     <div className = { Styles.photos_first }>

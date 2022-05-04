@@ -56,7 +56,7 @@ const questions = [
 
 const FAQ = () => {
     return (
-        <section className = { Styles.faq }>
+        <section id = { 'faq' } className = { Styles.faq }>
             <div className = { Styles.container }>
                 <div className = { Styles.content_wrapper }>
                     <div className = { Styles.description }>
