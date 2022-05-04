@@ -25,7 +25,7 @@ const Banner = () => {
                     <p className = { Styles.info }>{ 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ' }</p>
                     <div className = { Styles.btn_wrap }>
                         <button
-                            onClick = { () => setToggle(!toggle) }
+                            onClick = { () => setToggle(true) }
                             className = { Styles.btn }>{ 'Mint' }</button>
                         <button className = { Styles.btn_opensea }>
                             <img src = { opensea } alt = 'open sea icon' />

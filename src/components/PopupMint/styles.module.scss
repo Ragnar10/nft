@@ -1,10 +1,29 @@
 @import '../../theme/scss/mixins';
 
+.popup_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .popup {
     position: absolute;
     top: 200px;
     left: calc((100% - Min(50%, 800px)) / 2);
-    z-index: 10;
+    z-index: 2;
     width: Min(50%, 800px);
     padding: 20px;
     border-radius: var(--card-bradius);
