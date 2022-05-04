@@ -1,0 +1,120 @@
+@import '../../theme/scss/mixins';
+
+.popup {
+    position: absolute;
+    top: 200px;
+    left: calc((100% - Min(50%, 800px)) / 2);
+    z-index: 10;
+    width: Min(50%, 800px);
+    padding: 20px;
+    border-radius: var(--card-bradius);
+    background: rgba(23, 20, 41, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 48px Min(10%, 148px);
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.description_caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & span:first-child {
+        display: inline-block;
+        font-family: Exo_Black, sans-serif;
+        font-size: var(--main-title-fsize);
+        line-height: 66px;
+        color: var(--btn-color);
+    }
+
+    & span:last-child {
+        display: inline-block;
+        font-family: Exo_Thin, sans-serif;
+        font-size: var(--ribbon-fsize);
+        line-height: 53px;
+    }
+}
+
+.description_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & span {
+        display: inline-block;
+        font-family: OpenSans_Bold, sans-serif;
+        font-size: var(--main-fsize);
+        line-height: 25px;
+    }
+}
+
+.calculate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.calculate_field {
+    display: inline-block;
+    width: 200px;
+    height: 44px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: var(--menu-bradius);
+    font-family: OpenSans_Bold, sans-serif;
+    font-size: var(--small-title-fsize);
+    line-height: 44px;
+    text-align: center;
+    color: var(--main-bgcolor)
+}
+
+.calculate_sum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & span:first-child {
+        display: inline-block;
+        font-size: var(--main-fsize);
+        line-height: 25px;
+    }
+
+    & span:last-child {
+        display: inline-block;
+        font-family: OpenSans_Bold, sans-serif;
+        font-size: var(--main-fsize);
+        line-height: 25px;
+    }
+}
+
+.btn {
+    @include btn(var(--btn-color), var(--turquoise-bshadow));
+    width: 192px;
+
+    &:before {
+        width: 200px;
+    }
+}

@@ -1,14 +1,20 @@
+// Hooks
+import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
 // Images
 import opensea from '../../theme/assets/icons/opensea_logo.svg';
 // Components
 import Socials from '../Socials';
+import PopupMint from '../PopupMint';
 
 
 const Banner = () => {
+    const [toggle, setToggle] = useToggle();
+
     return (
         <section className = { Styles.banner }>
+            { toggle && <PopupMint onSetToggle = { setToggle } /> }
             <Socials
                 classWrapper = { Styles.banner_socials }
                 classList = { Styles.socials_list } />
@@ -18,7 +24,9 @@ const Banner = () => {
                     <p className = { Styles.title }>{ 'EXPRESS CARD' }</p>
                     <p className = { Styles.info }>{ 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ' }</p>
                     <div className = { Styles.btn_wrap }>
-                        <button className = { Styles.btn }>{ 'Mint' }</button>
+                        <button
+                            onClick = { () => setToggle(!toggle) }
+                            className = { Styles.btn }>{ 'Mint' }</button>
                         <button className = { Styles.btn_opensea }>
                             <img src = { opensea } alt = 'open sea icon' />
                         </button>

@@ -27,16 +27,18 @@
     }
 }
 
+.banner_wrap {}
+
 .caption {
     margin-bottom: 33px;
     font-family: Exo_Black, sans-serif;
-    font-size: 50px;
+    font-size: var(--main-title-fsize);
 }
 
 .title {
     margin-bottom: 50px;
     font-family: Exo_Thin, sans-serif;
-    font-size: 70px;
+    font-size: var(--secondary-title-fsize);
     color: var(--btn-color);
 }
 
