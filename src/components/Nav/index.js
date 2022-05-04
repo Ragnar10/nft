@@ -1,24 +1,28 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 
 const Nav = () => {
+    const { t } = useTranslation();
+
     return (
         <nav className = { Styles.nav_wrap }>
             <ul className = { Styles.nav_list }>
                 <li className = { Styles.nav_item }>
-                    <a className = { Styles.nav_link } href = { '#about' }>About</a>
+                    <a className = { Styles.nav_link } href = { '#about' }>{ t('nav_about') }</a>
                 </li>
                 <li className = { Styles.nav_item }>
-                    <a className = { Styles.nav_link } href = { '#benefits' }>Benefits</a>
+                    <a className = { Styles.nav_link } href = { '#benefits' }>{ t('nav_benefits') }</a>
                 </li>
                 <li className = { Styles.nav_item }>
-                    <a className = { Styles.nav_link } href = { '#roadmap' }>Roadmap</a>
+                    <a className = { Styles.nav_link } href = { '#roadmap' }>{ t('nav_roadmap') }</a>
                 </li>
                 <li className = { Styles.nav_item }>
-                    <a className = { Styles.nav_link } href = { '#faq' }>FAQ</a>
+                    <a className = { Styles.nav_link } href = { '#faq' }>{ t('nav_faq') }</a>
                 </li>
                 <li className = { Styles.nav_item }>
-                    <a className = { Styles.nav_link } href = { '#team' }>Team</a>
+                    <a className = { Styles.nav_link } href = { '#team' }>{ t('nav_team') }</a>
                 </li>
             </ul>
         </nav>

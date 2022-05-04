@@ -1,8 +1,10 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Hooks
 import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
-//Images
+// Images
 import question from '../../theme/assets/images/question.svg';
 
 const Question = ({ info }) => {
@@ -57,6 +59,8 @@ const questions = [
 ];
 
 const FAQ = () => {
+    const { t } = useTranslation();
+
     return (
         <section id = { 'faq' } className = { Styles.faq }>
             <div className = { Styles.container }>
@@ -76,7 +80,7 @@ const FAQ = () => {
                     </div>
                 </div>
                 <div className = { Styles.qa_icon }>
-                    <img src = { question } alt=""/>
+                    <img src = { question } alt = '' />
                 </div>
             </div>
             <div className = { Styles.line_wrap }>

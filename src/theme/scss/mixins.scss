@@ -21,7 +21,7 @@
         width: 158px;
         height: 44px;
         border: 1px solid $color;
-        border-radius: 10px;
+        border-radius: var(--menu-bradius);
         box-sizing: border-box;
     }
 }

@@ -5,6 +5,8 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 // Instruments
 import './theme/main.scss';
+// Localization
+import './i18n';
 // Components
 import App from './App';
 

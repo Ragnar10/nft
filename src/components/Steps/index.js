@@ -1,3 +1,5 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 
@@ -37,6 +39,8 @@ const steps = [
 ];
 
 const Steps = () => {
+    const { t } = useTranslation();
+
     return (
         <section className = { Styles.steps }>
             <div className = { Styles.container }>

@@ -1,10 +1,13 @@
 // Core
 import { useState } from 'react';
+// Localization
+import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 
 const PopupMint = (props) => {
     const [amount, setAmount] = useState('0');
+    const { t } = useTranslation();
 
     const { height } = getComputedStyle(document.body);
     const total = (amount * 0.077).toFixed(3);

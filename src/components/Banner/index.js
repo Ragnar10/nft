@@ -1,3 +1,5 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Hooks
 import { useToggle } from '../../hooks';
 // Styles
@@ -11,6 +13,7 @@ import PopupMint from '../PopupMint';
 
 const Banner = () => {
     const [toggle, setToggle] = useToggle();
+    const { t } = useTranslation();
 
     return (
         <section className = { Styles.banner }>

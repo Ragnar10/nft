@@ -1,3 +1,5 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Instruments
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -54,6 +56,8 @@ const settings = {
 };
 
 const Testimonials = () => {
+    const { t } = useTranslation();
+
     return (
         <section className = { Styles.testimonials }>
             <div className = { Styles.container }>

@@ -1,3 +1,5 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 // Images
@@ -5,6 +7,8 @@ import photo1 from '../../theme/assets/images/about_img1.svg';
 import photo2 from '../../theme/assets/images/about_img2.svg';
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <section id = { 'about' } className = { Styles.about }>
             <div className = { Styles.container }>

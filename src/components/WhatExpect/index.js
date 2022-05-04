@@ -1,3 +1,5 @@
+// Localization
+import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 
@@ -30,6 +32,8 @@ const list = [
 ];
 
 const WhatExpect = () => {
+    const { t } = useTranslation();
+
     return (
         <section className = { Styles.what_expect }>
             <div className = { Styles.container }>
