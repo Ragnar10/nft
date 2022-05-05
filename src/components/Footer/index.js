@@ -13,7 +13,7 @@ const Footer = () => {
 
     return (
         <footer id = 'footer' className = { Styles.footer }>
-            <div>
+            <div className = { Styles.container }>
                 <div className = { Styles.footer_logo }>
                     <img src = { logo } alt = 'logo' />
                 </div>
