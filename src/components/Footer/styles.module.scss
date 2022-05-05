@@ -50,6 +50,7 @@
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
         justify-content: flex-start;
+        width: var(--container-width-ipad);
         margin: 0 var(--container-mg-ipad);
     }
 

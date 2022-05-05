@@ -51,19 +51,21 @@ const comments = [
     },
 ];
 
-const settings = {
-    dots:           true,
-    infinite:       true,
-    slidesToShow:   3,
-    slidesToScroll: 3,
-    autoplay:       true,
-    speed:          2000,
-    autoplaySpeed:  10000,
-    pauseOnHover:   true,
-};
-
 const SocialWall = () => {
     const { t } = useTranslation();
+    const { width } = getComputedStyle(document.body);
+    const slidesToShow = parseFloat(width) < 1333 ? 2 : 3;
+
+    const settings = {
+        dots:           true,
+        infinite:       true,
+        slidesToShow:   parseFloat(width) > 768 ? slidesToShow : 1,
+        slidesToScroll: parseFloat(width) > 768 ? slidesToShow : 1,
+        autoplay:       true,
+        speed:          2000,
+        autoplaySpeed:  10000,
+        pauseOnHover:   true,
+    };
 
     // useEffect(() => {
     //     fetch('http://164.92.170.228:8000/v1/feed/', {

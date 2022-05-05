@@ -37,7 +37,10 @@
     --ribbon-fsize: 40px;
     /* dimensions */
     --container-width: 1200px;
-    --container-mg-ipad: 62px;
+    --container-width-ipad: calc(100% - 120px);
+    --container-width-mobile: calc(100% - 40px);
+    --container-mg-ipad: 60px;
+    --container-mg-mobile: 20px;
     --btn-bradius: 7px;
     --card-bradius: 20px;
     --menu-bradius: 10px;
