@@ -46,17 +46,20 @@
     &::before {
         content: '';
         position: absolute;
-        top: -14px;
-        left: 10px;
+        top: -2px;
+        left: 20px;
         z-index: 1;
         display: inline-block;
-        width: 280px;
-        height: 280px;
+        width: 260px;
+        height: 260px;
+        padding: 2px;
         border-radius: var(--card-bradius);
-        background: url('../../theme/assets/images/about_border.svg') no-repeat;
-        background-size: cover;
-
-
+        background: var(--pink45-bc);
+        mask: linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0) content-box, linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        box-sizing: border-box;
+        transform: rotate(-9deg);
     }
 
     & > img {
