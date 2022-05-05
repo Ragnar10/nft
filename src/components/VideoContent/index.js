@@ -20,7 +20,7 @@ const VideoContent = () => {
                     <div className = { Styles.video_ratio } />
                     <iframe
                         className = { Styles.video }
-                        src = 'https://www.youtube.com/watch?v=8CHvNUYUk3I'
+                        src = 'https://www.youtube.com/embed/oMfMUfgjiLg'
                         allowFullScreen
                         title = 'tornado video' />
                 </div>

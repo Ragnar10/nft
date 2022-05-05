@@ -1,3 +1,5 @@
+// Core
+import { useEffect, useState } from 'react';
 // Localization
 import { useTranslation } from 'react-i18next';
 // Instruments
@@ -62,6 +64,30 @@ const settings = {
 
 const SocialWall = () => {
     const { t } = useTranslation();
+
+    // useEffect(() => {
+    //     fetch('http://164.92.170.228:8000/v1/feed/', {
+    //         method:  'GET',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //     })
+    //         .then((data) => {
+    //             if (data.status === 200) {
+    //                 return data.json();
+    //             }
+    //
+    //             return console.log(data.status);
+    //         })
+    //         .then((data) => {
+    //             if (data) {
+    //                 console.log(data);
+    //             }
+    //
+    //             return null;
+    //         })
+    //         .catch((event) => console.log(event));
+    // }, []);
 
     return (
         <section className = { Styles.social_wall }>
