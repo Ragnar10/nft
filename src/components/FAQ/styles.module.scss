@@ -10,7 +10,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url('../../theme/assets/images/faq_bg.webp') no-repeat 100% 0;
+        background: url('../../theme/assets/images/faq_bg.webp') no-repeat 92% 0;
         opacity: 0.8;
     }
 }
@@ -194,8 +194,40 @@
     }
 }
 
+@media (max-width: 1495px) {
+    .faq {
+        &:before {
+            background: url('../../theme/assets/images/ipad/faq_bg_ipad.png') no-repeat 100% 0;
+        }
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
-        margin: 0 65px;
+        margin: 0 var(--container-mg-ipad);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .faq {
+        margin-bottom: 0;
+        &:before {
+            background: url('../../theme/assets/images/ipad/faq_bg_ipad.png') no-repeat 100% 20%;
+        }
+    }
+
+    .question_title {
+
+        .title_text,
+        .title_text_open {
+            margin-left: 9px;
+            white-space: normal;
+        }
+
+        .title_arrow,
+        .title_arrow_open {
+            margin-right: 0;
+            padding-right: 8px;
+        }
     }
 }

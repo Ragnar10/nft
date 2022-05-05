@@ -212,6 +212,21 @@
 
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
-        margin: 0 65px;
+        margin: 0 var(--container-mg-ipad);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .steps_wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wrapper {
+        margin: 0 41px;
+    }
+
+    .btn_youtube {
+        margin-bottom: 40px;
     }
 }

@@ -9,10 +9,25 @@
 }
 
 .wrapper {
-    background: url('../../theme/assets/images/main_bg.png') right top no-repeat, url('../../theme/assets/images/texture_back_main.png') left top no-repeat;
+    background: url('../../theme/assets/images/main_bg.png') right top no-repeat,
+                url('../../theme/assets/images/texture_back_main.png') left top no-repeat;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 1460px) {
+    .wrapper {
+        background: url('../../theme/assets/images/main_bg.png') right top no-repeat,
+                    url('../../theme/assets/images/texture_back_main.png') -80px top no-repeat;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1333px) {
+    .wrapper {
+        background: url('../../theme/assets/images/ipad/main_bg.png') right top no-repeat,
+                    url('../../theme/assets/images/texture_back_main.png') -80px top no-repeat;
+    }
 }

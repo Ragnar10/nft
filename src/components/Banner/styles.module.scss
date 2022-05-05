@@ -14,7 +14,7 @@
 
 .banner_socials {
     position: absolute;
-    padding: 11px 13px;
+    padding: 18px 13px;
     background: var(--purpur-bgcolor);
     border-radius: 0 var(--menu-bradius) var(--menu-bradius) 0;
 }
@@ -151,6 +151,37 @@
 
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
-        margin: 0 65px;
+        margin: 0 var(--container-mg-ipad);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .banner {
+        position: relative;
+        padding: 55px 0 90px;
+    }
+
+    .title {
+        width: 50%;
+    }
+
+    .btn_wrap {
+        margin-bottom: 118px;
+    }
+
+    .banner_socials {
+        bottom: 275px;
+        right: var(--container-mg-ipad);
+        padding: 11px 18px;
+        background: var(--purpur90-bgcolor);
+        border-radius: var(--menu-bradius);
+    }
+
+    .socials_list {
+        flex-direction: row;
+
+        li {
+            margin: 0 15px;
+        }
     }
 }
