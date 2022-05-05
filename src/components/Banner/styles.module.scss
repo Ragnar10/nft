@@ -93,6 +93,7 @@
     overflow: hidden;
 
     & > div {
+        width: max-content;
         animation: scrollThin 30s infinite linear;
     }
 
@@ -115,9 +116,9 @@
     line-height: 70px;
     transform: rotate(-2deg);
     background: linear-gradient(90deg, #FAB7FE 0%, #57C3FF 100.87%);
-    overflow: hidden;
 
     & > div {
+        width: max-content;
         animation: scroll 20s infinite linear;
     }
 
@@ -133,19 +134,19 @@
 
 @keyframes scroll {
     0% {
-        transform: translate(100%, 0);
+        transform: translate(100vw, 0);
     }
     100% {
-        transform: translate(-135%, 0)
+        transform: translate(-2432px, 0)
     }
 }
 
 @keyframes scrollThin {
     0% {
-        transform: translate(100%, 0);
+        transform: translate(100vw, 0);
     }
     100% {
-        transform: translate(-210%, 0)
+        transform: translate(-3780px, 0)
     }
 }
 
@@ -184,5 +185,23 @@
         li {
             margin: 0 15px;
         }
+    }
+
+    .line_thin {
+        transform: rotate(7deg);
+    }
+
+    .line {
+        transform: rotate(-3deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .line_thin {
+        transform: rotate(8deg);
+    }
+
+    .line {
+        transform: rotate(-4deg);
     }
 }

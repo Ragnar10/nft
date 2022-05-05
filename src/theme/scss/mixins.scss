@@ -24,4 +24,8 @@
         border-radius: var(--menu-bradius);
         box-sizing: border-box;
     }
+
+    &:active {
+        box-shadow: none;
+    }
 }

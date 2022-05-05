@@ -169,6 +169,7 @@
     overflow: hidden;
 
     & > div {
+        width: max-content;
         animation: scroll 20s infinite linear;
     }
 
@@ -187,10 +188,10 @@
 
 @keyframes scroll {
     0% {
-        transform: translate(100%, 0);
+        transform: translate(100vw, 0);
     }
     100% {
-        transform: translate(-125%, 0)
+        transform: translate(-2242px, 0)
     }
 }
 
