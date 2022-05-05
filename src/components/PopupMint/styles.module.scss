@@ -22,9 +22,9 @@
 .popup {
     position: absolute;
     top: 200px;
-    left: calc((100% - Min(50%, 800px)) / 2);
+    left: calc((100% - 800px) / 2);
     z-index: 2;
-    width: Min(50%, 800px);
+    width: 800px;
     padding: 20px;
     border-radius: var(--card-bradius);
     background: rgba(23, 20, 41, 0.7);
@@ -135,5 +135,69 @@
 
     &:before {
         width: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .popup {
+        top: 200px;
+        left: calc((100% - 600px) / 2);
+        width: 600px;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 48px Min(10%, 45px);
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .popup {
+        top: 200px;
+        left: calc((100% - 400px) / 2);
+        width: 400px;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 38px Min(10%, 45px);
+    }
+
+    .description_caption {
+        & span:first-child {
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        & span:last-child {
+            font-size: var(--small-title-fsize);
+            line-height: 31px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        top: 200px;
+        left: calc((100% - 320px) / 2);
+        width: 320px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 30px Min(10%, 10px);
+    }
+
+    .description_caption {
+        & span:first-child {
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        & span:last-child {
+            font-size: var(--small-title-fsize);
+            line-height: 31px;
+            white-space: nowrap;
+        }
     }
 }
