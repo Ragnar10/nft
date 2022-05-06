@@ -17,7 +17,7 @@ const Header = () => {
                 <div className = { Styles.header_logo }>
                     <img src = { logo } alt = 'logo' />
                 </div>
-                <Nav />
+                <Nav class = { Styles.nav_wrap_small } />
                 <button className = { Styles.btn }>Connect</button>
                 <Localization />
             </div>

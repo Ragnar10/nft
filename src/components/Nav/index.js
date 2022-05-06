@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 
-const Nav = () => {
+const Nav = (props) => {
     const { t } = useTranslation();
 
     return (
-        <nav className = { Styles.nav_wrap }>
+        <nav className = { `${Styles.nav_wrap} ${props.class}` }>
             <ul className = { Styles.nav_list }>
                 <li className = { Styles.nav_item }>
                     <a className = { Styles.nav_link } href = { '#about' }>{ t('nav_about') }</a>

@@ -57,6 +57,10 @@
             width: 125px;
         }
     }
+
+    .nav_wrap_small {
+        display: none !important;
+    }
 }
 
 @media (max-width: 768px) {
