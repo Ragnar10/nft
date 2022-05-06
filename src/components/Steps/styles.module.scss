@@ -27,6 +27,11 @@
     transform: rotate(180deg);
 }
 
+.bg_texture:nth-child(2),
+.bg_texture:last-child {
+    display: none;
+}
+
 .caption {
     margin-bottom: 11px;
     font-family: Exo_Black, sans-serif;
@@ -217,7 +222,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .steps_wrap {
         flex-wrap: wrap;
         justify-content: center;
@@ -229,5 +234,129 @@
 
     .btn_youtube {
         margin-bottom: 40px;
+    }
+
+    .info {
+        width: 55%;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        margin: 0 22px;
+    }
+
+    .info {
+        width: 75%;
+    }
+}
+
+@media (max-width: 856px) {
+    .wrapper {
+        margin: 0 46px;
+    }
+
+    .btn_openSea {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .caption {
+        font-size: var(--main-title-fsize-mobile);
+    }
+
+    .info {
+        font-size: var(--main-fsize-mobile);
+        line-height: 18px;
+    }
+
+    .bg_texture {
+        top: -250px;
+        background-size: 400px 570px;
+    }
+}
+
+@media (max-width: 583px) {
+    .first_wrap,
+    .third_wrap,
+    .fifth_wrap {
+        margin-right: 200px;
+        margin-left: 0;
+    }
+
+    .second_wrap,
+    .fourth_wrap {
+        margin-left: 200px;
+        margin-right: 0;
+    }
+
+    .btn_youtube {
+        margin-left: 43px;
+    }
+
+    .btn_mint {
+        margin-bottom: 40px;
+        margin-left: 43px;
+    }
+
+    .btn_connect {
+        margin-bottom: 40px;
+        margin-right: 37px;
+    }
+
+    .btn_openSea {
+        margin-right: 37px;
+    }
+
+    .btn_discord {
+        margin-left: 43px;
+    }
+
+    .bg_texture {
+        z-index: 1;
+    }
+
+    .info,
+    .caption {
+        z-index: 2;
+    }
+
+    .bg_texture {
+        top: -298px;
+        background-size: 370px 520px;
+    }
+
+    .bg_texture:nth-child(2) {
+        display: block;
+        top: 467px;
+        left: -33px;
+        transform: rotate(0deg);
+        background: url('../../theme/assets/images/texture_back_secondary.png') no-repeat;
+        background-size: 370px 520px;
+    }
+
+    .bg_texture:last-child {
+        display: block;
+        top: 738px;
+    }
+}
+
+@media (max-width: 444px) {
+    .first_wrap,
+    .third_wrap,
+    .fifth_wrap {
+        margin-right: 147px;
+        margin-left: 0;
+    }
+
+    .second_wrap,
+    .fourth_wrap {
+        margin-left: 140px;
+        margin-right: 0;
+    }
+
+    .btn {
+        margin-bottom: 25px;
     }
 }

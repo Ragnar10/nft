@@ -1,7 +1,7 @@
 @mixin btn($color, $boxShadow) {
     position: relative;
     display: inline-block;
-    width: 150px;
+    width: 120px;
     height: 36px;
     border: none;
     border-radius: 7px;
@@ -18,7 +18,7 @@
         position: absolute;
         top: -4px;
         left: -4px;
-        width: 158px;
+        width: 128px;
         height: 44px;
         border: 1px solid $color;
         border-radius: var(--menu-bradius);

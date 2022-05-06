@@ -55,6 +55,8 @@ const Steps = () => {
                 </div>
             </div>
             <div className = { Styles.bg_texture } />
+            <div className = { Styles.bg_texture } />
+            <div className = { Styles.bg_texture } />
         </section>
     );
 };
