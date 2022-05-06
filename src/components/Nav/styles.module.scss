@@ -54,12 +54,18 @@
     transition: .5s border-bottom;
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .nav_wrap {
         margin-right: 0;
     }
 
     .nav_item {
         margin: 0 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav_wrap {
+        display: none;
     }
 }

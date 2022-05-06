@@ -31,3 +31,23 @@
                     url('../../theme/assets/images/texture_back_main.png') -80px top no-repeat;
     }
 }
+
+@media (max-width: 1200px) {
+    .wrapper {
+        background: url('../../theme/assets/images/ipad/main_bg.png') 107% top/700px 700px no-repeat,
+                    url('../../theme/assets/images/texture_back_main.png') -200px top no-repeat;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        background: url('../../theme/assets/images/ipad/main_bg.png') 115% top/650px 650px no-repeat,
+                    url('../../theme/assets/images/texture_back_main.png') -160px top/422px 422px no-repeat;
+    }
+}
+
+@media (max-width: 757px) {
+    .wrapper {
+        background: none;
+    }
+}
