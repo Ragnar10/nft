@@ -237,3 +237,25 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: var(--container-width-mobile);
+        margin: 0 var(--container-mg-mobile);
+    }
+
+    .line_thin {
+        height: 26px;
+        font-size: var(--secondary-fsize);
+        line-height: 26px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translate(100vw, 0);
+        }
+        100% {
+            transform: translate(-1743px, 0)
+        }
+    }
+}
