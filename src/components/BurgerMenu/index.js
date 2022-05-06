@@ -14,6 +14,8 @@ const BurgerMenu = () => {
 
     const dropdown = toggle ? Styles.burger_menu_open : Styles.burger_menu;
 
+    document.body.style.overflow = toggle ? 'hidden' : null;
+
     return (
         <div className = { Styles.burger }>
             <div
