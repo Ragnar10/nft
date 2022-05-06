@@ -51,6 +51,7 @@
 @media (max-width: 1024px) {
     .btn {
         width: auto;
+        margin-right: 20px;
         padding: 0 25px;
 
         &:before{
@@ -84,13 +85,14 @@
     }
 
     .btn {
-        height: 30px;
-        padding: 0 33px;
+        height: 24px;
+        width: 102px;
         font-size: 14px;
-        line-height: 30px;
+        line-height: 24px;
 
         &:before {
-            height: 38px;
+            height: 32px;
+            width: 108px;
         }
     }
 }

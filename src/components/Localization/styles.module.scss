@@ -88,3 +88,35 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .localization_wrapper {
+        margin-left: -15px;
+    }
+
+    .dropdown_title {
+        margin-right: 14px;
+        font-size: var(--main-title-fsize-mobile);
+        line-height: 39px;
+    }
+
+    .dropdown_arrow,
+    .dropdown_arrow_open {
+        width: 19px;
+        height: 16px;
+        margin-top: 5px;
+        background: url('../../theme/assets/icons/faq_arrow.svg') no-repeat;
+        background-size: contain;
+    }
+
+    .dropdown_list,
+    .dropdown_list_open {
+        position: absolute;
+        top: 50px;
+    }
+
+    .list_item {
+        font-size: var(--main-title-fsize-mobile);
+        line-height: 39px;
+    }
+}
+

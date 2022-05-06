@@ -7,9 +7,12 @@ import logo from '../../theme/assets/icons/main_logo.svg';
 // Components
 import Nav from '../Nav';
 import Localization from '../Localization';
+import BurgerMenu from '../BurgerMenu';
 
 const Header = () => {
     const { t } = useTranslation();
+
+    const { width } = getComputedStyle(document.body);
 
     return (
         <header className = { Styles.header }>
@@ -18,8 +21,9 @@ const Header = () => {
                     <img src = { logo } alt = 'logo' />
                 </div>
                 <Nav class = { Styles.nav_wrap_small } />
-                <button className = { Styles.btn }>Connect</button>
-                <Localization />
+                <button className = { Styles.btn }>{ 'Connect' }</button>
+                { parseFloat(width) > 1024 && <Localization /> }
+                <BurgerMenu />
             </div>
         </header>
     );
