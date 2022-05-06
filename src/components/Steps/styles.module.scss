@@ -340,6 +340,10 @@
         display: block;
         top: 738px;
     }
+
+    .btn {
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 444px) {
@@ -354,9 +358,5 @@
     .fourth_wrap {
         margin-left: 140px;
         margin-right: 0;
-    }
-
-    .btn {
-        margin-bottom: 25px;
     }
 }
