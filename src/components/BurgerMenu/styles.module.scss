@@ -111,14 +111,14 @@
 }
 
 .header_logo {
-    width: 100px;
-    height: 36px;
+    width: 163px;
+    height: 60px;
     margin-right: auto;
 
     img {
         display: inline-block;
-        width: 100px;
-        height: 36px;
+        width: 163px;
+        height: 60px;
     }
 }
 
@@ -140,6 +140,16 @@
 }
 
 @media (max-width: 768px) {
+    .header_logo {
+        width: 100px;
+        height: 36px;
+
+        img {
+            width: 100px;
+            height: 36px;
+        }
+    }
+
     .header_btn {
         @include btn(var(--btn-color), var(--turquoise-bshadow));
         height: 24px;
