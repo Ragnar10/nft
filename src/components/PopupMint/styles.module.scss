@@ -22,7 +22,7 @@
 
 .popup {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: calc((100% - 800px) / 2);
     z-index: 2;
     width: 800px;
@@ -141,10 +141,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .popup {
-        top: 200px;
         left: calc((100% - 600px) / 2);
         width: 600px;
-        padding: 20px;
     }
 
     .container {
@@ -154,10 +152,8 @@
 
 @media (min-width: 480px) and (max-width: 768px) {
     .popup {
-        top: 200px;
         left: calc((100% - 400px) / 2);
         width: 400px;
-        padding: 20px;
     }
 
     .container {
@@ -180,7 +176,6 @@
 
 @media (max-width: 480px) {
     .popup {
-        top: 200px;
         left: calc((100% - 320px) / 2);
         width: 320px;
         padding: 10px;
