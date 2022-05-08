@@ -1,22 +1,24 @@
+// Core
+import { useState } from 'react';
 // Localization
 import { useTranslation } from 'react-i18next';
-// Hooks
-import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
-// Images
-import question from '../../theme/assets/images/question.svg';
 
-const Question = ({ info }) => {
-    const [toggle, setToggle] = useToggle();
+const Question = ({ info, openId, setOpenId }) => {
+    const arrowClass = openId === info.id ? Styles.title_arrow_open : Styles.title_arrow;
+    const titleClass = openId === info.id ? Styles.title_text_open : Styles.title_text;
+    const descrClass = openId === info.id ? Styles.question_descr_open : Styles.question_descr;
 
-    const arrowClass = !toggle ? Styles.title_arrow : Styles.title_arrow_open;
-    const titleClass = !toggle ? Styles.title_text : Styles.title_text_open;
-    const descrClass = !toggle ? Styles.question_descr : Styles.question_descr_open;
+    const onToggle = (id) => {
+        if (id === openId) return setOpenId(0);
+
+        setOpenId(id);
+    };
 
     return (
         <div className = { Styles.question }>
-            <div onClick = { () => setToggle(!toggle) } className = { Styles.question_title }>
+            <div onClick = { () => onToggle(info.id) } className = { Styles.question_title }>
                 <span className = { arrowClass } />
                 <span className = { titleClass }>{ info.title }</span>
             </div>
@@ -59,6 +61,7 @@ const questions = [
 ];
 
 const FAQ = () => {
+    const [openId, setOpenId] = useState(0);
     const { t } = useTranslation();
 
     return (
@@ -74,13 +77,14 @@ const FAQ = () => {
                     <div className = { Styles.questions_list }>
                         {
                             questions.map((item) => {
-                                return <Question key = { item.id } info = { item } />;
+                                return <Question
+                                    key = { item.id }
+                                    openId = { openId }
+                                    setOpenId = { setOpenId }
+                                    info = { item } />;
                             })
                         }
                     </div>
-                </div>
-                <div className = { Styles.qa_icon }>
-                    <img src = { question } alt = '' />
                 </div>
             </div>
             <div className = { Styles.line_wrap }>

@@ -242,6 +242,10 @@
 }
 
 @media (max-width: 992px) {
+    .steps {
+        padding-bottom: 70px;
+    }
+
     .wrapper {
         margin: 0 22px;
     }
@@ -252,6 +256,10 @@
 }
 
 @media (max-width: 856px) {
+    .steps {
+        padding-bottom: 70px;
+    }
+
     .wrapper {
         margin: 0 46px;
     }
@@ -323,13 +331,13 @@
     }
 
     .bg_texture {
-        top: -298px;
+        top: -318px;
         background-size: 370px 520px;
     }
 
     .bg_texture:nth-child(2) {
         display: block;
-        top: 467px;
+        top: 417px;
         left: -33px;
         transform: rotate(0deg);
         background: url('../../theme/assets/images/texture_back_secondary.png') no-repeat;
@@ -338,7 +346,7 @@
 
     .bg_texture:last-child {
         display: block;
-        top: 738px;
+        top: 718px;
     }
 
     .btn {
