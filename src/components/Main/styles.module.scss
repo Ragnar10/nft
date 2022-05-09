@@ -46,7 +46,20 @@
     }
 }
 
-@media (max-width: 757px) {
+@media (max-width: 855px) {
+    .wrapper {
+        background: url('../../theme/assets/images/ipad/main_bg.png') 115% top/650px 650px no-repeat,
+        url('../../theme/assets/images/texture_back_main.png') -182px top/382px 382px no-repeat;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        background: url('../../theme/assets/images/ipad/main_bg.png') 162% top/650px 650px no-repeat;
+    }
+}
+
+@media (max-width: 717px) {
     .wrapper {
         background: none;
     }

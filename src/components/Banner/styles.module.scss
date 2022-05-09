@@ -174,9 +174,54 @@
         bottom: 245px;
         right: var(--container-mg-mobile);
     }
+
+    .caption {
+        margin-bottom: 25px;
+        font-size: var(--main-title-fsize-mobile);
+    }
+
+    .title {
+        margin-bottom: 34px;
+        font-size: var(--secondary-title-fsize-mobile);
+    }
+
+    .info {
+        margin-bottom: 100px;
+        font-size: var(--main-fsize-mobile);
+        line-height: 18px;
+    }
+
+    .line {
+        height: 40px;
+        line-height: 40px;
+        font-size: var(--ribbon-fsize-mobile);
+    }
+    .line_thin {
+        height: 26px;
+        line-height: 26px;
+        font-size: var(--main-fsize-mobile);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translate(100vw, 0);
+        }
+        100% {
+            transform: translate(-1216px, 0)
+        }
+    }
+
+    @keyframes scrollThin {
+        0% {
+            transform: translate(100vw, 0);
+        }
+        100% {
+            transform: translate(-2930px, 0)
+        }
+    }
 }
 
-@media (min-width: 757px) and (max-width: 1200px) {
+@media (min-width: 718px) and (max-width: 1200px) {
     .banner {
         position: relative;
         padding: 55px 0 90px;
@@ -205,7 +250,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 757px) {
+@media (min-width: 320px) and (max-width: 717px) {
     .banner {
         position: relative;
         display: flex;
@@ -219,16 +264,6 @@
     .container {
         justify-content: center;
         text-align: center;
-    }
-
-    .caption {
-        margin-bottom: 25px;
-        font-size: var(--main-title-fsize-mobile);
-    }
-
-    .title {
-        margin-bottom: 34px;
-        font-size: var(--secondary-title-fsize-mobile);
     }
 
     .info {
@@ -337,35 +372,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .line {
-        height: 40px;
-        line-height: 40px;
-        font-size: var(--ribbon-fsize-mobile);
-    }
-    .line_thin {
-        height: 26px;
-        line-height: 26px;
-        font-size: var(--main-fsize-mobile);
-    }
 
-    @keyframes scroll {
-        0% {
-            transform: translate(100vw, 0);
-        }
-        100% {
-            transform: translate(-1216px, 0)
-        }
-    }
-
-    @keyframes scrollThin {
-        0% {
-            transform: translate(100vw, 0);
-        }
-        100% {
-            transform: translate(-2930px, 0)
-        }
-    }
-}
 
 
