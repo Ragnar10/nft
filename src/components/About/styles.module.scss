@@ -94,7 +94,8 @@
         display: inline-block;
         width: 163px;
         height: 60px;
-        background: url('../../theme/assets/icons/main_logo.svg') no-repeat;
+        background: url('../../theme/assets/icons/main_logo.png') no-repeat;
+        background-size: cover;
         transform: rotate(-9deg);
     }
 
@@ -339,7 +340,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .about {
         margin-bottom: 62px;
         padding: 6px 0 200px;
@@ -363,6 +364,8 @@
     }
 
     .photos_first {
+        top: 100px;
+        left: 0;
         width: 150px;
         height: 150px;
 

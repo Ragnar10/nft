@@ -117,7 +117,8 @@
     left: 0;
     width: 163px;
     height: 60px;
-    background: url('../../theme/assets/icons/main_logo.svg') no-repeat;
+    background: url('../../theme/assets/icons/main_logo.png') no-repeat;
+    background-size: cover;
     transform: rotate(-9.25deg);
 }
 
@@ -393,7 +394,6 @@
         top: 200px;
         left: -150px;
         width: 72px;
-        height: 27px;
         background-size: contain;
     }
 
@@ -439,7 +439,6 @@
         top: 200px;
         left: -200px;
         width: 72px;
-        height: 27px;
         background-size: contain;
     }
 
@@ -485,7 +484,6 @@
         top: 200px;
         left: -250px;
         width: 72px;
-        height: 27px;
         background-size: contain;
     }
 

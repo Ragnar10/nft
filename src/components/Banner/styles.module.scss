@@ -253,12 +253,12 @@
 @media (min-width: 320px) and (max-width: 717px) {
     .banner {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 7px 0 90px;
-        background: url('../../theme/assets/images/mobile/main_bg_mob.png') center -30px no-repeat;
-        background-size: contain;
+        //display: flex;
+        //flex-direction: column;
+        //align-items: center;
+        padding: 7px 0 250px;
+        background: url('../../theme/assets/images/mobile/main_bg_mob.png') center 0 no-repeat;
+        background-size: cover;
     }
 
     .container {
@@ -275,7 +275,10 @@
     }
 
     .banner_socials {
-        bottom: 275px;
+        position: absolute !important;
+        bottom: 100px;
+        left: calc((100% - 286px) / 2);
+        margin-bottom: 40px;
         padding: 11px 18px;
         background: var(--purpur90-bgcolor);
         border-radius: var(--menu-bradius);
@@ -283,7 +286,7 @@
 
     .banner_socials {
         position: initial;
-        order: 1;
+        //order: 1;
         margin-bottom: 40px;
     }
 
@@ -293,7 +296,8 @@
     }
 
     .line_wrap {
-        order: 2;
+        top: 200px
+        //order: 2;
     }
 
     .line_thin {
@@ -309,6 +313,8 @@
     }
 
     .btn_wrap {
+        position: relative;
+        bottom: -100px;
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
@@ -317,7 +323,7 @@
 
 @media (max-width: 575px) {
     .banner {
-        background: url('../../theme/assets/images/mobile/main_bg_mob.png') 50% 29% no-repeat;
+        background: url('../../theme/assets/images/mobile/main_bg_mob.png') 50% 40% no-repeat;
         background-size: contain;
     }
 
@@ -347,6 +353,8 @@
     }
 
     .banner_socials {
+        bottom: 80px;
+        left: 6%;
         width: 88% !important;
         margin-bottom: 74px;
     }

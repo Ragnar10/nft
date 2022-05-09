@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
-import logo from '../../theme/assets/icons/main_logo.svg';
+import logo from '../../theme/assets/icons/main_logo.png';
 // Components
 import Localization from '../Localization';
 
