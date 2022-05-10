@@ -219,7 +219,7 @@
 
     & > div {
         width: max-content;
-        animation: scroll 20s infinite linear;
+        //animation: scroll 20s infinite linear;
     }
 
     span {
@@ -235,14 +235,14 @@
     }
 }
 
-@keyframes scroll {
-    0% {
-        transform: translate(100vw, 0);
-    }
-    100% {
-        transform: translate(-2242px, 0)
-    }
-}
+//@keyframes scroll {
+//    0% {
+//        transform: translate(100vw, 0);
+//    }
+//    100% {
+//        transform: translate(-2242px, 0)
+//    }
+//}
 
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
@@ -484,12 +484,12 @@
         line-height: 26px;
     }
 
-    @keyframes scroll {
-        0% {
-            transform: translate(100vw, 0);
-        }
-        100% {
-            transform: translate(-1743px, 0)
-        }
-    }
+    //@keyframes scroll {
+    //    0% {
+    //        transform: translate(100vw, 0);
+    //    }
+    //    100% {
+    //        transform: translate(-1743px, 0)
+    //    }
+    //}
 }

@@ -119,7 +119,7 @@
 
     & > div {
         width: max-content;
-        animation: scroll 20s infinite linear;
+        //animation: scroll 20s infinite linear;
     }
 
     span {
@@ -132,23 +132,23 @@
     }
 }
 
-@keyframes scroll {
-    0% {
-        transform: translate(100vw, 0);
-    }
-    100% {
-        transform: translate(-2432px, 0)
-    }
-}
-
-@keyframes scrollThin {
-    0% {
-        transform: translate(100vw, 0);
-    }
-    100% {
-        transform: translate(-3780px, 0)
-    }
-}
+//@keyframes scroll {
+//    0% {
+//        transform: translate(100vw, 0);
+//    }
+//    100% {
+//        transform: translate(-2432px, 0)
+//    }
+//}
+//
+//@keyframes scrollThin {
+//    0% {
+//        transform: translate(100vw, 0);
+//    }
+//    100% {
+//        transform: translate(-3780px, 0)
+//    }
+//}
 
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
@@ -202,23 +202,23 @@
         font-size: var(--main-fsize-mobile);
     }
 
-    @keyframes scroll {
-        0% {
-            transform: translate(100vw, 0);
-        }
-        100% {
-            transform: translate(-1216px, 0)
-        }
-    }
-
-    @keyframes scrollThin {
-        0% {
-            transform: translate(100vw, 0);
-        }
-        100% {
-            transform: translate(-2930px, 0)
-        }
-    }
+    //@keyframes scroll {
+    //    0% {
+    //        transform: translate(100vw, 0);
+    //    }
+    //    100% {
+    //        transform: translate(-1216px, 0)
+    //    }
+    //}
+    //
+    //@keyframes scrollThin {
+    //    0% {
+    //        transform: translate(100vw, 0);
+    //    }
+    //    100% {
+    //        transform: translate(-2930px, 0)
+    //    }
+    //}
 }
 
 @media (min-width: 718px) and (max-width: 1200px) {
@@ -360,25 +360,25 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
-    .line_thin {
-        transform: rotate(6deg);
-    }
-
-    .line {
-        transform: rotate(-3deg);
-    }
-}
-
-@media (max-width: 1024px) {
-    .line_thin {
-        transform: rotate(7deg);
-    }
-
-    .line {
-        transform: rotate(-4deg);
-    }
-}
+//@media (min-width: 1024px) and (max-width: 1200px) {
+//    .line_thin {
+//        transform: rotate(6deg);
+//    }
+//
+//    .line {
+//        transform: rotate(-3deg);
+//    }
+//}
+//
+//@media (max-width: 1024px) {
+//    .line_thin {
+//        transform: rotate(7deg);
+//    }
+//
+//    .line {
+//        transform: rotate(-4deg);
+//    }
+//}
 
 
 
