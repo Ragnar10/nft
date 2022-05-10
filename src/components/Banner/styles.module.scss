@@ -94,7 +94,6 @@
 
     & > div {
         width: max-content;
-        animation: scrollThin 30s infinite linear;
     }
 
     span {
@@ -119,7 +118,6 @@
 
     & > div {
         width: max-content;
-        //animation: scroll 20s infinite linear;
     }
 
     span {
@@ -131,24 +129,6 @@
         font-family: Exo_Bold, sans-serif;
     }
 }
-
-//@keyframes scroll {
-//    0% {
-//        transform: translate(100vw, 0);
-//    }
-//    100% {
-//        transform: translate(-2432px, 0)
-//    }
-//}
-//
-//@keyframes scrollThin {
-//    0% {
-//        transform: translate(100vw, 0);
-//    }
-//    100% {
-//        transform: translate(-3780px, 0)
-//    }
-//}
 
 @media (min-width: 768px) and (max-width: 1333px) {
     .container {
@@ -201,24 +181,6 @@
         line-height: 26px;
         font-size: var(--main-fsize-mobile);
     }
-
-    //@keyframes scroll {
-    //    0% {
-    //        transform: translate(100vw, 0);
-    //    }
-    //    100% {
-    //        transform: translate(-1216px, 0)
-    //    }
-    //}
-    //
-    //@keyframes scrollThin {
-    //    0% {
-    //        transform: translate(100vw, 0);
-    //    }
-    //    100% {
-    //        transform: translate(-2930px, 0)
-    //    }
-    //}
 }
 
 @media (min-width: 718px) and (max-width: 1200px) {
@@ -253,9 +215,6 @@
 @media (min-width: 320px) and (max-width: 717px) {
     .banner {
         position: relative;
-        //display: flex;
-        //flex-direction: column;
-        //align-items: center;
         padding: 7px 0 250px;
         background: url('../../theme/assets/images/mobile/main_bg_mob.png') center 0 no-repeat;
         background-size: cover;
@@ -286,7 +245,6 @@
 
     .banner_socials {
         position: initial;
-        //order: 1;
         margin-bottom: 40px;
     }
 
@@ -297,7 +255,6 @@
 
     .line_wrap {
         top: 200px
-        //order: 2;
     }
 
     .line_thin {
@@ -359,27 +316,3 @@
         margin-bottom: 74px;
     }
 }
-
-//@media (min-width: 1024px) and (max-width: 1200px) {
-//    .line_thin {
-//        transform: rotate(6deg);
-//    }
-//
-//    .line {
-//        transform: rotate(-3deg);
-//    }
-//}
-//
-//@media (max-width: 1024px) {
-//    .line_thin {
-//        transform: rotate(7deg);
-//    }
-//
-//    .line {
-//        transform: rotate(-4deg);
-//    }
-//}
-
-
-
-

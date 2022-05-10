@@ -11,9 +11,6 @@ const Connect = () => {
     return (
         <section className = { Styles.connect }>
             <div className = { Styles.container }>
-                {/*<div className = { Styles.img_wrap }>*/}
-                {/*    <img src = { logo } alt = 'image' />*/}
-                {/*</div>*/}
                 <div className = { Styles.connect_wrap }>
                     <div>
                         <h2 className = { Styles.caption }>{ 'Connect' }</h2>
@@ -26,6 +23,7 @@ const Connect = () => {
                     </div>
                 </div>
             </div>
+            <div className = { Styles.bg_texture } />
         </section>
     );
 };

@@ -6,7 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import {
     aboutEn, aboutDe, bannerEn, bannerDe, connectEn, connectDe, faqEn, faqDe, headerEn, headerDe,
     navEn, navDe, popupMintEn, popupMintDe, socialWallEn, socialWallDe, stepsEn, stepsDe,
-    testimonialsEn, testimonialsDe, videoEn, videoDe, whatExpectEn, whatExpectDe,
+    videoEn, videoDe, whatExpectEn, whatExpectDe,
 } from './components/locales';
 
 const resources = {
@@ -21,7 +21,6 @@ const resources = {
             ...popupMintEn,
             ...socialWallEn,
             ...stepsEn,
-            ...testimonialsEn,
             ...videoEn,
             ...whatExpectEn,
         },
@@ -37,7 +36,6 @@ const resources = {
             ...popupMintDe,
             ...socialWallDe,
             ...stepsDe,
-            ...testimonialsDe,
             ...videoDe,
             ...whatExpectDe,
         },

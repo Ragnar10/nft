@@ -17,12 +17,6 @@ const Socials = (props) => {
                     <a
                         href = { '' } target = { '_blank' }
                         rel = 'noreferrer'
-                        className = { Styles.socials_twitter } />
-                </li>
-                <li>
-                    <a
-                        href = { '' } target = { '_blank' }
-                        rel = 'noreferrer'
                         className = { Styles.socials_insta } />
                 </li>
                 <li>

@@ -16,8 +16,6 @@ import socialWallEn from './SocialWall/locale/en.json';
 import socialWallDe from './SocialWall/locale/de.json';
 import stepsEn from './Steps/locale/en.json';
 import stepsDe from './Steps/locale/de.json';
-import testimonialsEn from './Testimonials/locale/en.json';
-import testimonialsDe from './Testimonials/locale/de.json';
 import videoEn from './VideoContent/locale/en.json';
 import videoDe from './VideoContent/locale/de.json';
 import whatExpectEn from './WhatExpect/locale/en.json';
@@ -26,5 +24,5 @@ import whatExpectDe from './WhatExpect/locale/de.json';
 export {
     aboutEn, aboutDe, bannerEn, bannerDe, connectEn, connectDe, faqEn, faqDe, headerEn, headerDe,
     navEn, navDe, popupMintEn, popupMintDe, socialWallEn, socialWallDe, stepsEn, stepsDe,
-    testimonialsEn, testimonialsDe, videoEn, videoDe, whatExpectEn, whatExpectDe,
+    videoEn, videoDe, whatExpectEn, whatExpectDe,
 };

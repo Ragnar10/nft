@@ -387,135 +387,150 @@
 
 @media (min-width: 640px) and (max-width: 768px) {
     .what_expect {
-        background: url('../../theme/assets/images/what_expect_bg.svg') no-repeat 150px 10%;
+        background: url('../../theme/assets/images/what_expect_bg.svg') no-repeat 200px 12%;
     }
 
     .images_logo {
-        top: 200px;
-        left: -150px;
-        width: 72px;
+        top: 165px;
+        right: 200px;
+        left: auto;
+        width: 60px;
         background-size: contain;
     }
 
     .images_bottle {
-        top: 170px;
-        left: -30px;
-        width: 35px;
-        height: 35px;
+        top: 135px;
+        right: 90px;
+        left: auto;
+        width: 28px;
+        height: 28px;
         background-size: contain;
     }
 
     .images_spiral {
-        top: 220px;
-        left: 50px;
-        width: 58px;
-        height: 58px;
+        top: 185px;
+        right: 0;
+        left: auto;
+        width: 47px;
+        height: 47px;
         background-size: contain;
     }
 
     .images_ball {
-        top: 370px;
-        left: 55px;
-        width: 52px;
-        height: 52px;
+        top: 335px;
+        right: -5px;
+        left: auto;
+        width: 42px;
+        height: 42px;
         background-size: contain;
     }
 
     .images_helicopter {
-        top: 450px;
-        left: -20px;
-        width: 54px;
-        height: 54px;
+        top: 415px;
+        right: 70px;
+        left: auto;
+        width: 43px;
+        height: 43px;
         background-size: contain;
     }
 }
 
 @media (min-width: 480px) and (max-width: 640px) {
     .what_expect {
-        background: url('../../theme/assets/images/what_expect_bg.svg') no-repeat 150px 10%;
+        background: url('../../theme/assets/images/what_expect_bg.svg') no-repeat 100px 12%;
     }
 
     .images_logo {
-        top: 200px;
-        left: -200px;
-        width: 72px;
+        top: 165px;
+        right: 200px;
+        left: auto;
+        width: 60px;
         background-size: contain;
     }
 
     .images_bottle {
-        top: 170px;
-        left: -80px;
-        width: 35px;
-        height: 35px;
+        top: 135px;
+        right: 90px;
+        left: auto;
+        width: 28px;
+        height: 28px;
         background-size: contain;
     }
 
     .images_spiral {
-        top: 220px;
-        left: 0;
-        width: 58px;
-        height: 58px;
+        top: 185px;
+        right: 0;
+        left: auto;
+        width: 47px;
+        height: 47px;
         background-size: contain;
     }
 
     .images_ball {
-        top: 370px;
-        left: 5px;
-        width: 52px;
-        height: 52px;
+        top: 335px;
+        right: -5px;
+        left: auto;
+        width: 42px;
+        height: 42px;
         background-size: contain;
     }
 
     .images_helicopter {
-        top: 450px;
-        left: -70px;
-        width: 54px;
-        height: 54px;
+        top: 415px;
+        right: 70px;
+        left: auto;
+        width: 43px;
+        height: 43px;
         background-size: contain;
     }
 }
 
 @media (max-width: 480px) {
     .what_expect {
-        background: url('../../theme/assets/images/what_expect_bg.svg') no-repeat 80px 10%;
+        background: url('../../theme/assets/images/what_expect_bg.svg') no-repeat 30px 12%;
     }
 
     .images_logo {
-        top: 200px;
-        left: -250px;
-        width: 72px;
+        top: 165px;
+        right: 200px;
+        left: auto;
+        width: 60px;
         background-size: contain;
     }
 
     .images_bottle {
-        top: 170px;
-        left: -130px;
-        width: 35px;
-        height: 35px;
+        top: 135px;
+        right: 90px;
+        left: auto;
+        width: 28px;
+        height: 28px;
         background-size: contain;
     }
 
     .images_spiral {
-        top: 220px;
-        left: -50px;
-        width: 58px;
-        height: 58px;
+        top: 185px;
+        right: 0;
+        left: auto;
+        width: 47px;
+        height: 47px;
         background-size: contain;
     }
 
     .images_ball {
-        top: 370px;
-        left: -45px;
-        width: 52px;
-        height: 52px;
+        top: 335px;
+        right: -5px;
+        left: auto;
+        width: 42px;
+        height: 42px;
         background-size: contain;
     }
 
     .images_helicopter {
-        top: 450px;
-        left: -120px;
-        width: 54px;
-        height: 54px;
+        top: 415px;
+        right: 70px;
+        left: auto;
+        width: 43px;
+        height: 43px;
         background-size: contain;
     }
 }
@@ -536,6 +551,8 @@
     }
 
     .description_caption {
+        margin-bottom: 24px;
+
         .caption {
             width: 100%;
             font-size: 30px;

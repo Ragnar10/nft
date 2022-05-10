@@ -169,7 +169,6 @@
 
     & > div {
         width: max-content;
-        //animation: scroll 20s infinite linear;
     }
 
     span {
@@ -184,15 +183,6 @@
         text-transform: uppercase;
     }
 }
-
-//@keyframes scroll {
-//    0% {
-//        transform: translate(100vw, 0);
-//    }
-//    100% {
-//        transform: translate(-2242px, 0)
-//    }
-//}
 
 @media (min-width: 1333px) and (max-width: 1520px) {
     .faq {
@@ -361,15 +351,6 @@
         font-size: var(--secondary-fsize);
         line-height: 26px;
     }
-
-    //@keyframes scroll {
-    //    0% {
-    //        transform: translate(100vw, 0);
-    //    }
-    //    100% {
-    //        transform: translate(-1743px, 0)
-    //    }
-    //}
 }
 
 @media (max-width: 480px) {

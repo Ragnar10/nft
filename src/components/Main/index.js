@@ -10,7 +10,6 @@ import WhatExpect from '../WhatExpect';
 import Steps from '../Steps';
 import FAQ from '../FAQ';
 import SocialWall from '../SocialWall';
-import Testimonials from '../Testimonials';
 import Connect from '../Connect';
 
 const Main = () => {
@@ -26,7 +25,6 @@ const Main = () => {
                     <Steps />
                     <FAQ />
                     <SocialWall />
-                    <Testimonials />
                     <Connect />
                 </main>
             </div>

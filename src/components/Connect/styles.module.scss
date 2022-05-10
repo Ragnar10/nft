@@ -1,11 +1,24 @@
 @import '../../theme/scss/mixins';
 
 .connect {
+    position: relative;
     padding: 34px 0 149px;
+}
+
+.bg_texture {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    z-index: 0;
+    width: 520px;
+    height: 729px;
+    background: url('../../theme/assets/images/texture_back_secondary.png') no-repeat;
+    transform: rotate(180deg);
 }
 
 .container {
     position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -91,6 +104,11 @@
 }
 
 @media (max-width: 1024px) {
+    .bg_texture {
+        top: -34px;
+        right: -185px;
+    }
+
     .connect_wrap {
         justify-content: flex-start;
         width: calc(100% + 30px);
@@ -130,6 +148,12 @@
 }
 
 @media (max-width: 768px) {
+    .bg_texture {
+        top: -34px;
+        right: 0;
+        background: url('../../theme/assets/images/mobile/texture_back_secondary_mobile.png') no-repeat;
+    }
+
     .container {
         width: var(--container-width-mobile);
         margin: 0 var(--container-mg-mobile);
