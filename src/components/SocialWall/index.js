@@ -57,7 +57,7 @@ const SocialWall = () => {
     const slidesToShow = parseFloat(width) < 1333 ? 2 : 3;
 
     const settings = {
-        dots:           true,
+        dots:           false,
         infinite:       true,
         slidesToShow:   parseFloat(width) > 768 ? slidesToShow : 1,
         slidesToScroll: parseFloat(width) > 768 ? slidesToShow : 1,
