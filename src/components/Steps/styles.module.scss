@@ -355,6 +355,10 @@
 }
 
 @media (max-width: 444px) {
+    .bg_texture:nth-child(2) {
+        left: -50px;
+    }
+
     .first_wrap,
     .third_wrap,
     .fifth_wrap {
