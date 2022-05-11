@@ -297,7 +297,7 @@
         width: 48%;
 
         &:before {
-            width: 103%;
+            width: calc(100% + 8px);
         }
     }
 
@@ -305,7 +305,7 @@
         width: 33%;
 
         &:before {
-            width: 106%;
+            width: calc(100% + 8px);
         }
     }
 
