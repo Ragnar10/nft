@@ -297,7 +297,8 @@
         width: 48%;
 
         &:before {
-            width: 103%;
+            left: -2%;
+            width: 104%;
         }
     }
 
@@ -305,7 +306,8 @@
         width: 33%;
 
         &:before {
-            width: 106%;
+            left: -2%;
+            width: 104%;
         }
     }
 
@@ -314,5 +316,21 @@
         left: 6%;
         width: 88% !important;
         margin-bottom: 74px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        &:before {
+            left: -3%;
+            width: 106%;
+        }
+    }
+
+    .btn_opensea {
+        &:before {
+            left: -3%;
+            width: 106%;
+        }
     }
 }
