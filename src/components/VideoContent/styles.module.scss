@@ -42,33 +42,7 @@
     position: relative;
     z-index: 10;
     width: 100%;
-    max-width: 996px;
-    border: 1px solid #646464;
-    border-radius: 20px;
-    background: #232323;
-
-    .circles {
-        position: absolute;
-        top: 17px;
-        left: 20px;
-        display: flex;
-
-        div:first-child {
-            background: #E96B5F;
-        }
-
-        div:last-child {
-            background: #6ABD60;
-        }
-
-        div {
-            width: 14px;
-            height: 14px;
-            margin-right: 10px;
-            border-radius: 50%;
-            background: #F6BD4C;
-        }
-    }
+    max-width: 960px;
 }
 
 .video_ratio {
@@ -82,7 +56,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    padding: 46px 20px 20px;
+    border-radius: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1333px) {
@@ -94,7 +68,10 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .video_wrap {
-        max-width: 800px;
+        max-width: 770px;
+    }
+
+    .video {
         border-radius: 16px;
     }
 
@@ -129,23 +106,8 @@
         line-height: 18px;
     }
 
-    .video_wrap {
-        border-radius: 6px;
-
-        .circles {
-            top: 10px;
-            left: 10px;
-
-            div {
-                width: 8px;
-                height: 8px;
-                margin-right: 6px;
-            }
-        }
-    }
-
     .video {
-        padding: 28px 10px 10px;
+        border-radius: 6px;
     }
 
     .bg_texture {
