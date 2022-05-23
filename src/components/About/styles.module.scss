@@ -34,21 +34,23 @@
 
 .photos_first {
     position: relative;
-    top: 100px;
+    top: 80px;
     z-index: 2;
-    width: 260px;
-    height: 260px;
+    width: 244px;
+    height: 244px;
     border-radius: var(--card-bradius);
+    background: var(--purpur0-bgcolor);
+    transform: rotate(-9deg);
 
     &::before {
         content: '';
         position: absolute;
-        top: -2px;
-        left: 20px;
+        top: -8px;
+        left: 10px;
         z-index: 1;
         display: inline-block;
-        width: 260px;
-        height: 260px;
+        width: 263px;
+        height: 263px;
         padding: 2px;
         border-radius: var(--card-bradius);
         background: var(--pink45-bc);
@@ -56,44 +58,29 @@
         -webkit-mask-composite: xor;
         mask-composite: exclude;
         box-sizing: border-box;
-        transform: rotate(-9deg);
     }
 
     & > img {
         position: relative;
+        top: -160px;
+        left: -65px;
+        z-index: 2;
         display: inline-block;
-        width: 260px;
-        height: 260px;
-    }
-
-    .first_insta_icon {
-        position: absolute;
-        top: 43px;
-        left: 18px;
-        z-index: 1;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: var(--menu-bradius);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-        background-color: var(--main-color);
-        background-image: url('../../theme/assets/icons/insta_color_icon.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        transform: rotate(-9deg);
+        width: 330px;
+        height: 425px;
+        transform: rotate(9deg);
     }
 
     .first_logo_icon {
         position: absolute;
-        bottom: 14px;
-        right: -163px;
+        bottom: -30px;
+        right: -160px;
         z-index: 2;
         display: inline-block;
         width: 163px;
         height: 60px;
         background: url('../../theme/assets/icons/main_logo.png') no-repeat;
         background-size: cover;
-        transform: rotate(-9deg);
     }
 
 
@@ -103,33 +90,20 @@
     position: relative;
     z-index: 1;
     top: 0;
-    left: -30px;
-    width: 300px;
-    height: 300px;
+    left: 0;
+    width: 238px;
+    height: 238px;
     border-radius: var(--card-bradius);
+    background: var(--pink-bgcolor);
+    transform: rotate(4deg);
 
     & > img {
         position: relative;
+        top: -127px;
         display: inline-block;
-        width: 300px;
-        height: 300px;
-    }
-
-    .second_insta_icon {
-        position: absolute;
-        top: 15px;
-        left: 30px;
-        z-index: 1;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: var(--menu-bradius);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-        background-color: var(--main-color);
-        background-image: url('../../theme/assets/icons/insta_color_icon.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        transform: rotate(4deg);
+        width: 316px;
+        height: 377px;
+        transform: rotate(-4deg);
     }
 }
 
@@ -140,6 +114,7 @@
     display: flex;
     flex-direction: column;
     width: 54%;
+    margin-left: 90px;
 }
 
 .description_caption {
@@ -150,7 +125,6 @@
 
     & span:first-child {
         display: inline-block;
-        margin-left: -90px;
         font-family: Exo_Black, sans-serif;
         font-size: var(--main-title-fsize);
         line-height: 66px;
@@ -276,37 +250,36 @@
     .photos {
         width: 50%;
         margin-top: -200px;
+        margin-left: -30px;
     }
 
     .photos_first {
-        top: 183px;
-        left: 110px;
-        width: 220px;
-        height: 220px;
+        top: 165px;
+        left: 77px;
+        width: 198px;
+        height: 198px;
 
         &::before {
-            width: 220px;
-            height: 220px;
+            width: 216px;
+            height: 216px;
         }
 
         & > img {
-            width: 220px;
-            height: 220px;
-        }
-
-        .first_insta_icon {
-            top: 33px;
-            left: 18px;
+            top: -140px;
+            left: -50px;
+            width: 267px;
+            height: 355px;
         }
     }
 
     .photos_second {
-        width: 240px;
-        height: 240px;
+        width: 194px;
+        height: 194px;
 
         & > img {
-            width: 240px;
-            height: 240px;
+            top: -103px;
+            width: 256px;
+            height: 306px;
         }
     }
 
@@ -323,7 +296,7 @@
 
     .description {
         width: 44%;
-        margin-left: auto;
+        margin-left: 80px;
     }
 }
 
@@ -340,7 +313,7 @@
     }
 
     .bg_texture {
-        top: 150px;
+        top: 70px;
         background: url('../../theme/assets/images/mobile/texture_back_secondary_mobile.png') no-repeat;
     }
 
@@ -351,48 +324,28 @@
     }
 
     .photos_first {
-        top: 100px;
+        top: 50px;
         left: 0;
-        width: 150px;
-        height: 150px;
+        width: 135px;
+        height: 135px;
 
         &::before {
-            top: -2px;
-            left: 15px;
-            width: 150px;
-            height: 150px;
+            top: -6px;
+            left: 8px;
+            width: 147px;
+            height: 147px;
         }
 
         & > img {
-            width: 150px;
-            height: 150px;
-        }
-
-        .first_insta_icon {
-            top: 25px;
-            left: 15px;
-            width: 20px;
-            height: 20px;
-            background-image: none;
-            transform: rotate(0);
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 3.5px;
-                left: 3.5px;
-                width: 13px;
-                height: 13px;
-                background-image: url('../../theme/assets/icons/insta_color_icon.svg');
-                background-repeat: no-repeat;
-                background-size: 13px 13px;
-                transform: rotate(-9deg);
-            }
+            top: -95px;
+            left: -33px;
+            width: 182px;
+            height: 242px;
         }
 
         .first_logo_icon {
-            bottom: 7px;
-            right: -100px;
+            bottom: -18px;
+            right: -92px;
             width: 90px;
             height: 33px;
             background-size: contain;
@@ -400,34 +353,13 @@
     }
 
     .photos_second {
-        width: 173px;
-        height: 173px;
+        width: 131px;
+        height: 131px;
 
         & > img {
+            top: -70px;
             width: 173px;
-            height: 173px;
-        }
-
-        .second_insta_icon {
-            top: 15px;
-            left: 20px;
-            width: 20px;
-            height: 20px;
-            background-image: none;
-            transform: rotate(0);
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 3.5px;
-                left: 3.5px;
-                width: 13px;
-                height: 13px;
-                background-image: url('../../theme/assets/icons/insta_color_icon.svg');
-                background-repeat: no-repeat;
-                background-size: 13px 13px;
-                transform: rotate(4deg);
-            }
+            height: 207px;
         }
     }
 

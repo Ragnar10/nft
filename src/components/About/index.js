@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 // Images
-import photo1 from '../../theme/assets/images/about_img1.svg';
-import photo2 from '../../theme/assets/images/about_img2.svg';
+import photo1 from '../../theme/assets/images/about_img1.png';
+import photo2 from '../../theme/assets/images/about_img2.png';
 
 const About = () => {
     const { t } = useTranslation();
@@ -15,12 +15,10 @@ const About = () => {
                 <div className = { Styles.photos }>
                     <div className = { Styles.photos_first }>
                         <img src = { photo1 } alt = 'photo' />
-                        <span className = { Styles.first_insta_icon } />
                         <span className = { Styles.first_logo_icon } />
                     </div>
                     <div className = { Styles.photos_second }>
                         <img src = { photo2 } alt = 'photo' />
-                        <span className = { Styles.second_insta_icon } />
                     </div>
                 </div>
                 <div className = { Styles.description }>
