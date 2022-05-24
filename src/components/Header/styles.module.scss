@@ -1,6 +1,8 @@
 @import '../../theme/scss/mixins';
 
 .header {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     padding: 50px 0 30px;
