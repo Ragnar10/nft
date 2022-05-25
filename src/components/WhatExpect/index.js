@@ -40,7 +40,7 @@ const WhatExpect = () => {
     ];
 
     return (
-        <section className = { Styles.what_expect }>
+        <section id = { 'what_expect' } className = { Styles.what_expect }>
             <div className = { Styles.container }>
                 <div className = { Styles.description }>
                     <div className = { Styles.description_caption }>

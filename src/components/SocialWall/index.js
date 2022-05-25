@@ -92,7 +92,7 @@ const SocialWall = () => {
     // }, []);
 
     return (
-        <section className = { Styles.social_wall }>
+        <section id = { 'social' } className = { Styles.social_wall }>
             <div className = { Styles.container }>
                 <div className = { Styles.description }>
                     <h2 className = { Styles.description_caption }>{ 'Social wall' }</h2>

@@ -42,7 +42,7 @@ const Steps = () => {
     ];
 
     return (
-        <section className = { Styles.steps }>
+        <section id = { 'steps' } className = { Styles.steps }>
             <div className = { Styles.container }>
                 <h2 className = { Styles.caption }>{ t('steps_title') }</h2>
                 <p className = { Styles.info }>{ t('steps_info') }</p>

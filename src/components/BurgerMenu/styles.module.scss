@@ -81,12 +81,13 @@
         & li {
             margin-bottom: 50px;
 
-            a {
+            span {
                 display: inline-block;
                 font-family: Exo_Black, sans-serif;
                 font-size: var(--main-title-fsize-mobile);
                 line-height: 39px;
                 color: var(--main-color);
+                cursor: pointer;
 
                 &:hover {
                     color: var(--btn-color);

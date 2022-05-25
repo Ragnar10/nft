@@ -2,6 +2,8 @@
 import { useTranslation } from 'react-i18next';
 // Hooks
 import { useToggle } from '../../hooks';
+// Utils
+import { onScroll } from '../../utils';
 // Styles
 import Styles from './styles.module.scss';
 import logo from '../../theme/assets/icons/main_logo.png';
@@ -15,6 +17,11 @@ const BurgerMenu = () => {
     const dropdown = toggle ? Styles.burger_menu_open : Styles.burger_menu;
 
     document.body.style.overflow = toggle ? 'hidden' : null;
+
+    const onDown = (href) => {
+        onScroll(href);
+        setToggle(!toggle);
+    };
 
     return (
         <div className = { Styles.burger }>
@@ -37,29 +44,19 @@ const BurgerMenu = () => {
                 </div>
                 <ul>
                     <li>
-                        <a
-                            onClick = { () => setToggle(!toggle) }
-                            href = { '#about' }>{ t('nav_about') }</a>
+                        <span onClick = { () => onDown('about') }>{ t('nav_about') }</span>
                     </li>
                     <li>
-                        <a
-                            onClick = { () => setToggle(!toggle) }
-                            href = { '#benefits' }>{ t('nav_benefits') }</a>
+                        <span onClick = { () => onDown('what_expect') }>{ t('nav_benefits') }</span>
                     </li>
                     <li>
-                        <a
-                            onClick = { () => setToggle(!toggle) }
-                            href = { '#roadmap' }>{ t('nav_roadmap') }</a>
+                        <span onClick = { () => onDown('steps') }>{ t('nav_steps') }</span>
                     </li>
                     <li>
-                        <a
-                            onClick = { () => setToggle(!toggle) }
-                            href = { '#faq' }>{ t('nav_faq') }</a>
+                        <span onClick = { () => onDown('faq') }>{ t('nav_faq') }</span>
                     </li>
                     <li>
-                        <a
-                            onClick = { () => setToggle(!toggle) }
-                            href = { '#team' }>{ t('nav_team') }</a>
+                        <span onClick = { () => onDown('social') }>{ t('nav_social') }</span>
                     </li>
                 </ul>
                 <Localization />
