@@ -20,32 +20,32 @@ const Step = ({ item }) => {
     );
 };
 
-const steps = [
-    {
-        id: 1, number: '1', title: 'Create metamask wallet', classWrap: Styles.first_wrap, classBtn: Styles.btn_youtube, link: '#',
-    },
-    {
-        id: 2, number: '2', title: 'Connect Wallet', classWrap: Styles.second_wrap, classBtn: Styles.btn_connect, btnContent: 'Connect',
-    },
-    {
-        id: 3, number: '3', title: 'Buy NFT and Reap the reward', classWrap: Styles.third_wrap, classBtn: Styles.btn_mint, btnContent: 'Mint',
-    },
-    {
-        id: 4, number: '4', title: 'Opensea collection', classWrap: Styles.fourth_wrap, classBtn: Styles.btn_openSea, link: '#',
-    },
-    {
-        id: 5, number: '5', title: 'Get live support on discord', classWrap: Styles.fifth_wrap, classBtn: Styles.btn_discord, link: '#',
-    },
-];
-
 const Steps = () => {
     const { t } = useTranslation();
+
+    const steps = [
+        {
+            id: 1, number: '1', title: t('steps_youtube'), classWrap: Styles.first_wrap, classBtn: Styles.btn_youtube, link: '#',
+        },
+        {
+            id: 2, number: '2', title: t('steps_connect'), classWrap: Styles.second_wrap, classBtn: Styles.btn_connect, btnContent: 'Connect',
+        },
+        {
+            id: 3, number: '3', title: t('steps_mint'), classWrap: Styles.third_wrap, classBtn: Styles.btn_mint, btnContent: 'Mint',
+        },
+        {
+            id: 4, number: '4', title: t('steps_opensea'), classWrap: Styles.fourth_wrap, classBtn: Styles.btn_openSea, link: '#',
+        },
+        {
+            id: 5, number: '5', title: t('steps_discord'), classWrap: Styles.fifth_wrap, classBtn: Styles.btn_discord, link: '#',
+        },
+    ];
 
     return (
         <section className = { Styles.steps }>
             <div className = { Styles.container }>
-                <h2 className = { Styles.caption }>{ 'Step by step' }</h2>
-                <p className = { Styles.info }>{ 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' }</p>
+                <h2 className = { Styles.caption }>{ t('steps_title') }</h2>
+                <p className = { Styles.info }>{ t('steps_info') }</p>
                 <div className = { Styles.steps_wrap }>
                     {
                         steps.map((item) => {

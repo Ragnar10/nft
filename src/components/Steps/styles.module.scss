@@ -124,6 +124,11 @@
     .number {
         color: var(--purple-color);
     }
+    .step {
+        & > h3 {
+            padding: 0 10px;
+        }
+    }
     .border {
         background: linear-gradient(135deg, rgba(114, 137, 218, 0) 70%, rgba(114, 137, 218, .8));
     }
