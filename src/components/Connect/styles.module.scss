@@ -58,6 +58,7 @@
 }
 
 .info {
+    width: 80%;
     margin-bottom: 41px;
     font-size: var(--main-fsize);
     line-height: 25px;
@@ -100,6 +101,23 @@
         div {
             width: 60%;
         }
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1294px) {
+    .info {
+        margin-bottom: 90px;
+    }
+}
+
+@media (min-width: 1038px) and (max-width: 1200px) {
+    .info {
+        margin-bottom: 115px;
     }
 }
 

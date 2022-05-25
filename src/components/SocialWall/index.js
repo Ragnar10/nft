@@ -96,9 +96,7 @@ const SocialWall = () => {
             <div className = { Styles.container }>
                 <div className = { Styles.description }>
                     <h2 className = { Styles.description_caption }>{ 'Social wall' }</h2>
-                    <p className = { Styles.description_info }>
-                        { 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' }
-                    </p>
+                    <p className = { Styles.description_info }>{ t('social_wall_info') }</p>
                 </div>
                 <div className = { Styles.comments }>
                     <Slider { ...settings }>

@@ -175,12 +175,8 @@
         white-space: nowrap;
     }
 
-    & span:nth-child(2),
-    & span:nth-child(4),
-    & span:nth-child(6),
-    & span:nth-child(8) {
+    & span:nth-child(2n + 1) {
         font-family: Exo_Bold, sans-serif;
-        text-transform: uppercase;
     }
 }
 

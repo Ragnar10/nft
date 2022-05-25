@@ -27,42 +27,42 @@ const Question = ({ info, openId, setOpenId }) => {
     );
 };
 
-const questions = [
-    {
-        id:    1,
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?',
-        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        id:    2,
-        title: 'Tempor incididunt ut labore et dolore magna aliqua? ',
-        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        id:    3,
-        title: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea?',
-        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        id:    4,
-        title: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat? ',
-        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        id:    5,
-        title: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt?',
-        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-        id:    6,
-        title: 'Tempor incididunt ut labore et dolore magna aliqua? ',
-        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-];
-
 const FAQ = () => {
     const [openId, setOpenId] = useState(0);
     const { t } = useTranslation();
+
+    const questions = [
+        {
+            id:    1,
+            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+        {
+            id:    2,
+            title: 'Tempor incididunt ut labore et dolore magna aliqua? ',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+        {
+            id:    3,
+            title: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea?',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+        {
+            id:    4,
+            title: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat? ',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+        {
+            id:    5,
+            title: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt?',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+        {
+            id:    6,
+            title: 'Tempor incididunt ut labore et dolore magna aliqua? ',
+            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+    ];
 
     return (
         <section id = { 'faq' } className = { Styles.faq }>
@@ -90,16 +90,19 @@ const FAQ = () => {
             <div className = { Styles.line_wrap }>
                 <div className = { Styles.line_thin }>
                     <div>
-                        <span>{ 'TORNADO EXPRESS CARD - ' }</span>
-                        <span>{ 'Ron Bielecki ' }</span>
-                        <span>{ '- Exclusive Membership - TORNADO EXPRESS CARD - ' }</span>
-                        <span>{ 'Ron Bielecki ' }</span>
-                        <span>{ '- Exclusive Membership - ' }</span>
-                        <span>{ 'TORNADO EXPRESS CARD - ' }</span>
-                        <span>{ 'Ron Bielecki ' }</span>
-                        <span>{ '- Exclusive Membership - TORNADO EXPRESS CARD - ' }</span>
-                        <span>{ 'Ron Bielecki ' }</span>
-                        <span>{ '- Exclusive Membership - ' }</span>
+                        <span>{ t('banner_ribbon_start') }</span>
+                        <span>{ t('banner_ribbon_middle') }</span>
+                        <span>{ `${t('banner_ribbon_end')} ${t('banner_ribbon_start')}` }</span>
+                        <span>{ t('banner_ribbon_middle') }</span>
+                        <span>{ `${t('banner_ribbon_end')} ${t('banner_ribbon_start')}` }</span>
+                        <span>{ t('banner_ribbon_middle') }</span>
+                        <span>{ `${t('banner_ribbon_end')} ${t('banner_ribbon_start')}` }</span>
+                        <span>{ t('banner_ribbon_middle') }</span>
+                        <span>{ `${t('banner_ribbon_end')} ${t('banner_ribbon_start')}` }</span>
+                        <span>{ t('banner_ribbon_middle') }</span>
+                        <span>{ `${t('banner_ribbon_end')} ${t('banner_ribbon_start')}` }</span>
+                        <span>{ t('banner_ribbon_middle') }</span>
+                        <span>{ t('banner_ribbon_end') }</span>
                     </div>
                 </div>
             </div>
