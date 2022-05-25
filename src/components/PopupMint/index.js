@@ -30,11 +30,11 @@ const PopupMint = (props) => {
                 <div className = { Styles.container }>
                     <div className = { Styles.description }>
                         <h2 className = { Styles.description_caption }>
-                            <span>{ 'MINT YOUR' }</span>
-                            <span>{ 'TORNADO EXPRESS CARD' }</span>
+                            <span>{ t('popup_title') }</span>
+                            <span>{ 'TORNADO CARD' }</span>
                         </h2>
                         <p className = { Styles.description_info }>
-                            <span>{ 'select amount' }</span>
+                            <span>{ t('popup_amount') }</span>
                             <span>{ 'MAX 10' }</span>
                         </p>
                     </div>
@@ -47,8 +47,8 @@ const PopupMint = (props) => {
                             onChange = { onChange }
                             className = { Styles.calculate_field } />
                         <div className = { Styles.calculate_sum }>
-                            <span>{ 'Price ----- 0.077 ETH' }</span>
-                            <span>{ `Total ----- ${total} ETH` }</span>
+                            <span>{ `${t('popup_price')} ----- 0.077 ETH` }</span>
+                            <span>{ `${t('popup_total')} ----- ${total} ETH` }</span>
                         </div>
                         <button className = { Styles.btn }>{ 'Mint' }</button>
                     </div>
