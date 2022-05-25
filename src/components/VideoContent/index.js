@@ -9,18 +9,12 @@ const VideoContent = () => {
     return (
         <section className = { Styles.video_content }>
             <div className = { Styles.container }>
-                <h2 className = { Styles.caption }>{ 'Lorem Ipsum' }</h2>
-                <p className = { Styles.info }>{ 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' }</p>
+                <h2 className = { Styles.caption }>{ t('video_content_title') }</h2>
                 <div className = { Styles.video_wrap }>
-                    <div className = { Styles.circles }>
-                        <div />
-                        <div />
-                        <div />
-                    </div>
                     <div className = { Styles.video_ratio } />
                     <iframe
                         className = { Styles.video }
-                        src = 'https://www.youtube.com/embed/oMfMUfgjiLg'
+                        src = { t('video_content_link') }
                         allowFullScreen
                         title = 'tornado video' />
                 </div>

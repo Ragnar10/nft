@@ -23,19 +23,13 @@
 }
 
 .caption {
-    margin-bottom: 14px;
+    z-index: 1;
+    width: 60%;
+    margin-bottom: 40px;
     font-family: Exo_Black, sans-serif;
     font-size: 50px;
-    z-index: 1;
-}
-
-.info {
-    width: 48%;
-    margin-bottom: 60px;
-    font-size: 18px;
-    line-height: 25px;
+    line-height: 66px;
     text-align: center;
-    z-index: 1;
 }
 
 .video_wrap {
@@ -75,10 +69,6 @@
         border-radius: 16px;
     }
 
-    .info {
-        width: 55%;
-    }
-
     .bg_texture {
         top: 0;
     }
@@ -95,15 +85,9 @@
     }
 
     .caption {
+        width: 70%;
         font-size: var(--main-title-fsize-mobile);
-    }
-
-    .info {
-        width: 100%;
-        padding: 0 55px;
-        margin-bottom: 56px;
-        font-size: var(--main-fsize-mobile);
-        line-height: 18px;
+        line-height: 39px;
     }
 
     .video {
