@@ -6,6 +6,7 @@ import { useToggle } from '../../hooks';
 import { onScroll } from '../../utils';
 // Styles
 import Styles from './styles.module.scss';
+// Images
 import logo from '../../theme/assets/icons/main_logo.png';
 // Components
 import Localization from '../Localization';
@@ -15,8 +16,6 @@ const BurgerMenu = () => {
     const { t } = useTranslation();
 
     const dropdown = toggle ? Styles.burger_menu_open : Styles.burger_menu;
-
-    document.body.style.overflow = toggle ? 'hidden' : null;
 
     const onDown = (href) => {
         onScroll(href);

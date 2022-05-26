@@ -138,6 +138,10 @@
     .burger {
         display: flex;
     }
+
+    body:has(.burger_menu_open) {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 768px) {
