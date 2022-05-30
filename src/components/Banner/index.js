@@ -5,7 +5,7 @@ import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
 // Images
-import opensea from '../../theme/assets/icons/opensea_logo.svg';
+// import opensea from '../../theme/assets/icons/opensea_logo.svg';
 // Components
 import Socials from '../Socials';
 import PopupMint from '../PopupMint';
@@ -36,9 +36,9 @@ const Banner = () => {
                             <button
                                 onClick = { () => onToggle() }
                                 className = { Styles.btn }>{ 'Mint' }</button>
-                            <button className = { Styles.btn_opensea }>
-                                <img src = { opensea } alt = 'open sea icon' />
-                            </button>
+                            { /* <button className = { Styles.btn_opensea }> */ }
+                            { /*    <img src = { opensea } alt = 'open sea icon' /> */ }
+                            { /* </button> */ }
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import { useToggle } from '../../hooks';
 import Styles from './styles.module.scss';
 
 const Localization = () => {
-    const [lang, setLang] = useState('Eng');
+    const [lang, setLang] = useState('Deu');
     const [toggle, setToggle] = useToggle();
     const { i18n } = useTranslation();
 
@@ -36,13 +36,13 @@ const Localization = () => {
             <div className = { dropdownList }>
                 <div>
                     <span
-                        id = 'en'
-                        onClick = { onChangeLang }
-                        className = { Styles.list_item }>{ 'Eng' }</span>
-                    <span
                         id = 'de'
                         onClick = { onChangeLang }
                         className = { Styles.list_item }>{ 'Deu' }</span>
+                    <span
+                        id = 'en'
+                        onClick = { onChangeLang }
+                        className = { Styles.list_item }>{ 'Eng' }</span>
                 </div>
             </div>
         </div>

@@ -7,27 +7,27 @@ const Socials = (props) => {
             className = { `${Styles.socials} ${props.classWrapper}` }
             style = { props.style ? props.style : null }>
             <ul className = { `${Styles.socials_list} ${props.classList}` }>
+                { /* <li> */ }
+                { /*    <a */ }
+                { /*        href = { '' } target = { '_blank' } */ }
+                { /*        rel = 'noreferrer' */ }
+                { /*        className = { Styles.socials_opensea } /> */ }
+                { /* </li> */ }
                 <li>
                     <a
-                        href = { '' } target = { '_blank' }
-                        rel = 'noreferrer'
-                        className = { Styles.socials_opensea } />
-                </li>
-                <li>
-                    <a
-                        href = { '' } target = { '_blank' }
+                        href = { 'https://www.instagram.com/ronbielecki/?hl=en' } target = { '_blank' }
                         rel = 'noreferrer'
                         className = { Styles.socials_insta } />
                 </li>
                 <li>
                     <a
-                        href = { '' } target = { '_blank' }
+                        href = { 'https://t.me/tornadocardio' } target = { '_blank' }
                         rel = 'noreferrer'
                         className = { Styles.socials_telegram } />
                 </li>
                 <li>
                     <a
-                        href = { '' } target = { '_blank' }
+                        href = { 'https://discord.gg/mpwvRC8hUm' } target = { '_blank' }
                         rel = 'noreferrer'
                         className = { Styles.socials_discord } />
                 </li>
