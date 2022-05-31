@@ -30,6 +30,12 @@
     position: absolute;
     left: 0;
     top: -60px;
+
+    & > img {
+        display: inline-block;
+        width: 488px;
+        height: 273px;
+    }
 }
 
 .connect_wrap {
@@ -136,7 +142,6 @@
 
         div {
             width: auto;
-            text-align: center;
         }
 
         & > div {
@@ -147,7 +152,7 @@
         .img_wrap {
             position: inherit;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             margin-bottom: 30px;
         }
 
@@ -160,6 +165,7 @@
     }
 
     .btn {
+        left: 88px;
         bottom: -18px;
     }
 
@@ -197,5 +203,10 @@
     .img_wrap {
         width: 335px;
         height: 188px;
+
+        & > img {
+            width: 335px;
+            height: 188px;
+        }
     }
 }

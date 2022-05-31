@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 // Images
-import logo from '../../theme/assets/images/connect_bg.svg';
+import connect from '../../theme/assets/images/connect_bg.png';
 
 const Connect = () => {
     const { t } = useTranslation();
@@ -17,7 +17,7 @@ const Connect = () => {
                         <h2 className = { Styles.title }>{ 'TORNADO CARD' }</h2>
                         <p className = { Styles.info }>{ t('connect_info') }</p>
                         <div className = { Styles.img_wrap }>
-                            <img src = { logo } alt = 'image' />
+                            <img src = { connect } alt = 'image' />
                         </div>
                         <button className = { Styles.btn }>{ 'Connect' }</button>
                     </div>
