@@ -87,7 +87,13 @@
         animation: text 3s steps(4) infinite;
 
         @keyframes text {
-            to {
+            0% {
+                clip-path: inset(0 -13px 0 0)
+            }
+            50% {
+                clip-path: inset(0 39px 0 0)
+            }
+            100% {
                 clip-path: inset(0 -13px 0 0)
             }
         }
@@ -137,14 +143,20 @@
 
     .skeleton {
         & > span {
-            top: calc((100% - 65px) / 2);
+            top: calc((100% - 39px) / 2);
             font-size: 30px;
             line-height: 39px;
             filter: drop-shadow(2px 2px #555);
             clip-path: inset(0 24px 0 0);
 
             @keyframes text {
-                to {
+                0% {
+                    clip-path: inset(0 -8px 0 0)
+                }
+                50% {
+                    clip-path: inset(0 24px 0 0)
+                }
+                100% {
                     clip-path: inset(0 -8px 0 0)
                 }
             }
