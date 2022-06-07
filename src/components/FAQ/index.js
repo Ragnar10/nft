@@ -32,36 +32,10 @@ const FAQ = () => {
     const { t } = useTranslation();
 
     const questions = [
-        {
-            id:    1,
-            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?',
-            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            id:    2,
-            title: 'Tempor incididunt ut labore et dolore magna aliqua? ',
-            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            id:    3,
-            title: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea?',
-            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            id:    4,
-            title: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat? ',
-            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            id:    5,
-            title: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt?',
-            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            id:    6,
-            title: 'Tempor incididunt ut labore et dolore magna aliqua? ',
-            descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
+        { id: 1, title: t('faq_question1'), descr: t('faq_answer1') },
+        { id: 2, title: t('faq_question2'), descr: t('faq_answer2') },
+        { id: 3, title: t('faq_question3'), descr: t('faq_answer3') },
+        { id: 4, title: t('faq_question4'), descr: t('faq_answer4') },
     ];
 
     return (
@@ -70,9 +44,7 @@ const FAQ = () => {
                 <div className = { Styles.content_wrapper }>
                     <div className = { Styles.description }>
                         <h2 className = { Styles.description_caption }>{ 'FAQ' }</h2>
-                        <p className = { Styles.description_info }>
-                            { 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' }
-                        </p>
+                        <p className = { Styles.description_info }>{ t('faq_info') }</p>
                     </div>
                     <div className = { Styles.questions_list }>
                         {

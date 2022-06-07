@@ -80,7 +80,7 @@
 .questions_list {
     display: flex;
     flex-direction: column;
-    height: 560px;
+    height: 500px;
     margin-left: 20px;
 
     & .question:last-child {
@@ -335,6 +335,10 @@
         line-height: 19px;
     }
 
+    .questions_list {
+        height: 385px;
+    }
+
     .question_title {
         .title_text,
         .title_text_open {
@@ -355,9 +359,5 @@
         &::before {
             left: calc(100% - 370px);
         }
-    }
-
-    .questions_list {
-        height: 750px;
     }
 }
