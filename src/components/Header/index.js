@@ -1,5 +1,3 @@
-// Localization
-import { useTranslation } from 'react-i18next';
 // Styles
 import Styles from './styles.module.scss';
 // Images
@@ -10,8 +8,6 @@ import Localization from '../Localization';
 import BurgerMenu from '../BurgerMenu';
 
 const Header = () => {
-    const { t } = useTranslation();
-
     const { width } = getComputedStyle(document.body);
 
     return (
