@@ -10,7 +10,7 @@ const PopupMint = (props) => {
     const { t } = useTranslation();
 
     const { height } = getComputedStyle(document.body);
-    const total = (amount * 0.077).toFixed(3);
+    const total = (amount * 0.25).toFixed(2);
 
     const onChange = (event) => {
         const { value } = event.target;
@@ -47,7 +47,7 @@ const PopupMint = (props) => {
                             onChange = { onChange }
                             className = { Styles.calculate_field } />
                         <div className = { Styles.calculate_sum }>
-                            <span>{ `${t('popup_price')} ----- 0.077 ETH` }</span>
+                            <span>{ `${t('popup_price')} ----- 0.25 ETH` }</span>
                             <span>{ `${t('popup_total')} ----- ${total} ETH` }</span>
                         </div>
                         <button className = { Styles.btn }>{ 'Mint' }</button>
