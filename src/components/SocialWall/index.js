@@ -11,48 +11,13 @@ import Styles from './styles.module.scss';
 // Images
 import comment_avatar from '../../theme/assets/images/comment_avatar.svg';
 import comment_img from '../../theme/assets/images/comment_img.svg';
+// Components
+import Spinner from '../Spinner';
+import ErrorMessage from '../ErrorMessage';
 
-const comments = [
-    {
-        id:      1,
-        name:    'Brandwatch',
-        company: 'CEO Company',
-        descr:   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.',
-    },
-    {
-        id:      2,
-        name:    'Namesecondname',
-        company: 'Ceo Company',
-        descr:   'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo. Onsectetur adipiscing elit',
-    },
-    {
-        id:      3,
-        name:    'Ron',
-        company: 'CEO Company',
-        descr:   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.',
-    },
-    {
-        id:      4,
-        name:    'Brandwatch',
-        company: 'CEO Company',
-        descr:   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.',
-    },
-    {
-        id:      5,
-        name:    'Namesecondname',
-        company: 'Ceo Company',
-        descr:   'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo. Onsectetur adipiscing elit',
-    },
-    {
-        id:      6,
-        name:    'Ron',
-        company: 'CEO Company',
-        descr:   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.',
-    },
-];
+const SocialSlider = ({ comments }) => {
+    if (!comments.length) return null;
 
-const SocialWall = () => {
-    const { t } = useTranslation();
     const { width } = getComputedStyle(document.body);
     const slidesToShow = parseFloat(width) < 1333 ? 2 : 3;
 
@@ -67,29 +32,70 @@ const SocialWall = () => {
         pauseOnHover:   true,
     };
 
-    // useEffect(() => {
-    //     fetch('http://164.92.170.228:8000/v1/feed/', {
-    //         method:  'GET',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //     })
-    //         .then((data) => {
-    //             if (data.status === 200) {
-    //                 return data.json();
-    //             }
-    //
-    //             return console.log(data.status);
-    //         })
-    //         .then((data) => {
-    //             if (data) {
-    //                 console.log(data);
-    //             }
-    //
-    //             return null;
-    //         })
-    //         .catch((event) => console.log(event));
-    // }, []);
+    return (
+        <Slider { ...settings }>
+            {
+                comments.map((item) => {
+                    return (
+                        <div key = { item.id } className = { Styles.comments_card }>
+                            <div className = { Styles.card_caption }>
+                                <div className = { Styles.caption_avatar }>
+                                    <img src = { comment_avatar } alt = 'avatar image' />
+                                </div>
+                                <div className = { Styles.caption_text }>
+                                    <span>{ item.name }</span>
+                                    <span>{ `@${item.username}` }</span>
+                                </div>
+                            </div>
+                            <div className = { Styles.card_img }>
+                                <img src = { comment_img } alt = 'social image' />
+                            </div>
+                            <p className = { Styles.card_descr }>{ item.text }</p>
+                        </div>
+                    );
+                })
+            }
+        </Slider>
+    );
+};
+
+const SocialWall = () => {
+    const { t } = useTranslation();
+    const [comments, setComments] = useState([]);
+    const [loader, setLoader] = useState(false);
+    const [error, setError] = useState('');
+
+    useEffect(() => {
+        fetch('https://feedback.tornadocard.io/v1/feed/', {
+            method:  'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((data) => {
+                setLoader(true);
+                if (data.status === 200) {
+                    return data.json();
+                }
+                setLoader(false);
+                setError('Something went wrong, please try again later!');
+
+                return null;
+            })
+            .then((data) => {
+                if (data) {
+                    setComments(data.results);
+                    setLoader(false);
+                }
+
+                return null;
+            })
+            .catch(() => {
+                setError('');
+                setLoader(false);
+                setError('Something went wrong, please try again later!');
+            });
+    }, []);
 
     return (
         <section id = { 'social' } className = { Styles.social_wall }>
@@ -99,29 +105,9 @@ const SocialWall = () => {
                     <p className = { Styles.description_info }>{ t('social_wall_info') }</p>
                 </div>
                 <div className = { Styles.comments }>
-                    <Slider { ...settings }>
-                        {
-                            comments.map((item) => {
-                                return (
-                                    <div key = { item.id } className = { Styles.comments_card }>
-                                        <div className = { Styles.card_caption }>
-                                            <div className = { Styles.caption_avatar }>
-                                                <img src = { comment_avatar } alt = 'avatar image' />
-                                            </div>
-                                            <div className = { Styles.caption_text }>
-                                                <span>{ item.name }</span>
-                                                <span>{ `@${item.name}` }</span>
-                                            </div>
-                                        </div>
-                                        <div className = { Styles.card_img }>
-                                            <img src = { comment_img } alt = 'social image' />
-                                        </div>
-                                        <p className = { Styles.card_descr }>{ item.descr }</p>
-                                    </div>
-                                );
-                            })
-                        }
-                    </Slider>
+                    { loader && <Spinner /> }
+                    { error && <ErrorMessage text = { error } /> }
+                    { comments.length > 0 && <SocialSlider comments = { comments } /> }
                 </div>
             </div>
             <div className = { Styles.bg_texture } />

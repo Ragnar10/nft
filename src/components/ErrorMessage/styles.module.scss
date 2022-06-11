@@ -1,0 +1,59 @@
+.error {
+    position: relative;
+    border-radius: var(--card-bradius);
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 50px 30px;
+    text-align: center;
+    background: var(--error-bgcolor);
+    backdrop-filter: blur(20px);
+
+    & > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1px;
+        border-radius: var(--card-bradius);
+        background: var(--red-bc);
+        mask: linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0) content-box, linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        box-sizing: border-box;
+    }
+
+    & > span {
+        position: relative;
+        top: calc((100% - 32px) / 2);
+        z-index: 2;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--red-color);
+    }
+}
+
+@media (max-width: 768px) {
+    .error {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .error {
+        & > span {
+            top: calc((100% - 64px) / 2);
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .error {
+        & > span {
+            top: calc((100% - 96px) / 2);
+        }
+    }
+}
