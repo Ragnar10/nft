@@ -6,8 +6,6 @@ import connectEn from './Connect/locale/en.json';
 import connectDe from './Connect/locale/de.json';
 import faqEn from './FAQ/locale/en.json';
 import faqDe from './FAQ/locale/de.json';
-import headerEn from './Header/locale/en.json';
-import headerDe from './Header/locale/de.json';
 import navEn from './Nav/locale/en.json';
 import navDe from './Nav/locale/de.json';
 import popupMintEn from './PopupMint/locale/en.json';
@@ -22,7 +20,7 @@ import whatExpectEn from './WhatExpect/locale/en.json';
 import whatExpectDe from './WhatExpect/locale/de.json';
 
 export {
-    aboutEn, aboutDe, bannerEn, bannerDe, connectEn, connectDe, faqEn, faqDe, headerEn, headerDe,
-    navEn, navDe, popupMintEn, popupMintDe, socialWallEn, socialWallDe, stepsEn, stepsDe,
-    videoEn, videoDe, whatExpectEn, whatExpectDe,
+    aboutEn, aboutDe, bannerEn, bannerDe, connectEn, connectDe, faqEn, faqDe, navEn, navDe,
+    popupMintEn, popupMintDe, socialWallEn, socialWallDe, stepsEn, stepsDe, videoEn, videoDe,
+    whatExpectEn, whatExpectDe,
 };
