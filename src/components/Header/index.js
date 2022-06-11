@@ -17,7 +17,8 @@ const Header = () => {
                     <img src = { logo } alt = 'logo' />
                 </div>
                 <Nav class = { Styles.nav_wrap_small } />
-                <button className = { Styles.btn }>{ 'Connect' }</button>
+                <button id = 'btn_metaon' className = { Styles.btn } >{ 'Connect' }</button>
+                <button id = 'btn_metaoff' className = { Styles.btn } >{ 'Connect' }</button>
                 { parseFloat(width) > 1024 && <Localization /> }
                 <BurgerMenu />
             </div>

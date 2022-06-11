@@ -33,9 +33,10 @@ const Banner = () => {
                         <p className = { Styles.title }>{ 'TORNADO CARD' }</p>
                         <p className = { Styles.info }>{ t('banner_info') }</p>
                         <div className = { Styles.btn_wrap }>
+                            <button id = 'minttogleoff'  className = { Styles.btn }>{ 'Mint' }</button>
                             <button
-                                onClick = { () => onToggle() }
-                                className = { Styles.btn }>{ 'Mint' }</button>
+                                id = 'minttogleon' className = { Styles.btn }
+                                onClick = { () => onToggle() }>{ 'Mint' }</button>
                             { /* <button className = { Styles.btn_opensea }> */ }
                             { /*    <img src = { opensea } alt = 'open sea icon' /> */ }
                             { /* </button> */ }

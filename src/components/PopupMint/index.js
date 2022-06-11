@@ -40,6 +40,7 @@ const PopupMint = (props) => {
                     </div>
                     <div className = { Styles.calculate }>
                         <input
+                            id = 'mintammount'
                             type = 'text'
                             name = 'amount'
                             value = { amount }
@@ -50,7 +51,7 @@ const PopupMint = (props) => {
                             <span>{ `${t('popup_price')} ----- 0.25 ETH` }</span>
                             <span>{ `${t('popup_total')} ----- ${total} ETH` }</span>
                         </div>
-                        <button className = { Styles.btn }>{ 'Mint' }</button>
+                        <button id = 'realmint' className = { Styles.btn }>{ 'Mint' }</button>
                     </div>
                 </div>
             </div>
