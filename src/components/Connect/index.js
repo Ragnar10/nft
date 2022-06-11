@@ -19,7 +19,8 @@ const Connect = () => {
                         <div className = { Styles.img_wrap }>
                             <img src = { connect } alt = 'image' />
                         </div>
-                        <button className = { Styles.btn }>{ 'Connect' }</button>
+                        <button id = 'btn_metaon' className = { Styles.btn } >{ 'Connect' }</button>
+                        <button id = 'btn_metaoff' className = { Styles.btn } >{ 'Connect' }</button>
                     </div>
                 </div>
             </div>
