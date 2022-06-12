@@ -10,7 +10,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import Styles from './styles.module.scss';
 // Images
 import comment_avatar from '../../theme/assets/images/comment_avatar.svg';
-import comment_img from '../../theme/assets/images/comment_img.svg';
 // Components
 import Spinner from '../Spinner';
 import ErrorMessage from '../ErrorMessage';
@@ -48,7 +47,7 @@ const SocialSlider = ({ comments }) => {
                                 </div>
                             </div>
                             <div className = { Styles.card_img }>
-                                <img src = { comment_img } alt = 'social image' />
+                                <img src = { item.image } alt = 'social image' />
                             </div>
                             <p className = { Styles.card_descr }>{ item.text }</p>
                         </div>
