@@ -77,7 +77,7 @@ const SocialWall = () => {
                     return data.json();
                 }
                 setLoader(false);
-                setError('Something went wrong, please try again later!');
+                setError(t('social_wall_error'));
 
                 return null;
             })
@@ -92,7 +92,7 @@ const SocialWall = () => {
             .catch(() => {
                 setError('');
                 setLoader(false);
-                setError('Something went wrong, please try again later!');
+                setError(t('social_wall_error'));
             });
     }, []);
 
