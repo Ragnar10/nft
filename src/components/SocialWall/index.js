@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick-theme.css';
 // Styles
 import Styles from './styles.module.scss';
 // Images
-import comment_avatar from '../../theme/assets/images/comment_avatar.svg';
+import comment_avatar from '../../theme/assets/images/comment_avatar.jpeg';
 // Components
 import Spinner from '../Spinner';
 import ErrorMessage from '../ErrorMessage';
@@ -52,7 +52,7 @@ const SocialSlider = ({ comments }) => {
                             <p className = { Styles.card_descr }>{ item.text }</p>
                         </div>
                     );
-                })
+                }).reverse()
             }
         </Slider>
     );

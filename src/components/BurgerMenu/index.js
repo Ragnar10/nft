@@ -36,8 +36,7 @@ const BurgerMenu = () => {
                     <div className = { Styles.header_logo }>
                         <img src = { logo } alt = 'logo' />
                     </div>
-                    <button id = 'btn_metaon' className = { Styles.header_btn } >{ 'Connect' }</button>
-                    <button id = 'btn_metaoff' className = { Styles.header_btn } >{ 'Connect' }</button>
+                    <button id = 'btn_mob_connected' className = { Styles.header_btn }>{ 'Connect' }</button>
                     <div
                         onClick = { () => setToggle(false) }
                         className = { Styles.burger_icon_close } />

@@ -225,6 +225,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             const shortAcc = truncate(currentAccount, 12, '...');
 
             $('#btn_metaon').text(shortAcc);
+            $('#btn_mob_connected').text(shortAcc);
             $('#btn_connected').text('Connected');
             $('#minttogleoff').css('display', 'none');
             $('#minttogleon').css('display', 'block');
