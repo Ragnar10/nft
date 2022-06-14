@@ -10,6 +10,7 @@ const VideoBg = () => {
                 loop
                 autoPlay
                 muted
+                playsInline
                 className = { Styles.video_bg }>
                 <source src = { main_bg } type = 'video/mp4' />
             </video>
