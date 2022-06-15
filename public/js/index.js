@@ -419,12 +419,12 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         const bolaccaunt = await web3.eth.getAccounts();
 
-        console.log(bolaccaunt[ 0 ]);
+        // console.log(bolaccaunt[ 0 ]);
 
 
         if (bolaccaunt.length === 0) {
             // MetaMask is locked or the user has not connected any accounts
-            console.log('Please connect to MetaMask.');
+            // console.log('Please connect to MetaMask.');
 
             $('#minttogleoff').css('display', 'block');
             $('#minttogleon').css('display', 'none');
@@ -433,7 +433,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 
             $('#minttogleoff').on('click', () => {
-                console.log('Please connect to MetaMask.');
+                // console.log('Please connect to MetaMask.');
                 alert('Please connect to MetaMask.');
             });
         } else if (bolaccaunt[ 0 ] !== currentAccount) {
@@ -469,7 +469,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             const chain = 'rinkeby'; // rinkeby or polygon
 
 
-            console.log('MetaMask is connected');
+            // console.log('MetaMask is connected');
         }
 
         document.getElementById('btn_metaon').addEventListener('click', async () => {
@@ -490,7 +490,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         });
 
 
-        console.log('MetaMask is installed!');
+        // console.log('MetaMask is installed!');
     } else {
         window.setTimeout(offlinebtninitialize, 1000);
 
@@ -503,7 +503,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                 btn_metaoff.addEventListener('click', async () => {
                     alert('Please install Metamask!');
                     window.location.href = 'https://metamask.io/';
-                    console.log('Please install Metamask!');
+                    // console.log('Please install Metamask!');
                 });
             }
 
@@ -511,13 +511,13 @@ window.addEventListener('DOMContentLoaded', async () => {
                 minttogleoff.addEventListener('click', async () => {
                     alert('Please install Metamask!');
                     window.location.href = 'https://metamask.io/';
-                    console.log('Please install Metamask!');
+                    // console.log('Please install Metamask!');
                 });
             }
         }
 
 
-        console.log('Please install Metamask!');
+        // console.log('Please install Metamask!');
     }
 
 
@@ -562,8 +562,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                                 .send({ from: publicadress, value: value.toString() });
 
                             if (mintTransaction) {
-                                console.log(publicadress);
-                                console.log('Minuted successfully!');
+                                // console.log(publicadress);
+                                // console.log('Minuted successfully!');
                                 alert('Minuted successfully!');
                                 $('#realmint').html('Mint');
                             }
