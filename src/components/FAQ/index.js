@@ -44,7 +44,6 @@ const FAQ = () => {
                 <div className = { Styles.content_wrapper }>
                     <div className = { Styles.description }>
                         <h2 className = { Styles.description_caption }>{ 'FAQ' }</h2>
-                        <p className = { Styles.description_info }>{ t('faq_info') }</p>
                     </div>
                     <div className = { Styles.questions_list }>
                         {
