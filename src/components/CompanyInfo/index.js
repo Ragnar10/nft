@@ -13,7 +13,7 @@ const CompanyInfo = () => {
                     <h3>{ t('company_info_legal_title') }</h3>
                     <p>
                         <span>{ t('company_info_legal_descr') }</span>
-                        <span className = { Styles.info_link }>{ 'www.tornadocard.io' }</span>
+                        <span className = { Styles.info_url }>{ 'www.tornadocard.io' }</span>
                     </p>
                 </div>
                 <div className = { Styles.info_wrapper }>
