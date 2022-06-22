@@ -10,7 +10,6 @@ import Styles from './styles.module.scss';
 import Socials from '../Socials';
 import PopupMint from '../PopupMint';
 
-
 const Banner = () => {
     const [toggle, setToggle] = useToggle();
     const { t } = useTranslation();
