@@ -12,6 +12,7 @@ import Steps from '../Steps';
 import FAQ from '../FAQ';
 import SocialWall from '../SocialWall';
 import Connect from '../Connect';
+import CompanyInfo from '../CompanyInfo';
 
 const Main = () => {
     return (
@@ -31,6 +32,7 @@ const Main = () => {
                 </main>
             </div>
             <Footer />
+            <CompanyInfo />
         </div>
     );
 };

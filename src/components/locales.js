@@ -18,9 +18,11 @@ import videoEn from './VideoContent/locale/en.json';
 import videoDe from './VideoContent/locale/de.json';
 import whatExpectEn from './WhatExpect/locale/en.json';
 import whatExpectDe from './WhatExpect/locale/de.json';
+import companyInfoEn from './CompanyInfo/locale/en.json';
+import companyInfoDe from './CompanyInfo/locale/de.json';
 
 export {
     aboutEn, aboutDe, bannerEn, bannerDe, connectEn, connectDe, faqEn, faqDe, navEn, navDe,
     popupMintEn, popupMintDe, socialWallEn, socialWallDe, stepsEn, stepsDe, videoEn, videoDe,
-    whatExpectEn, whatExpectDe,
+    whatExpectEn, whatExpectDe, companyInfoEn, companyInfoDe,
 };
