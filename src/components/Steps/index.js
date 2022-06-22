@@ -1,12 +1,9 @@
 // Localization
 import { useTranslation } from 'react-i18next';
-// Hooks
-// import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
-// import PopupMint from '../PopupMint';
 
-const Step = ({ item, onToggle }) => {
+const Step = ({ item }) => {
     return (
         <div className = { Styles.step_item }>
             <div className = { `${Styles.wrapper} ${item.classWrap}` }>
@@ -19,7 +16,7 @@ const Step = ({ item, onToggle }) => {
             {
                 item.btnContent
                     ? <div
-                        // onClick = { onToggle }
+                        onClick = { () =>  window.scrollTo(0, 0) }
                         className = { `${Styles.btn} ${item.classBtn}` }>
                         { item.btnContent }
                     </div>
@@ -35,13 +32,6 @@ const Step = ({ item, onToggle }) => {
 
 const Steps = () => {
     const { t } = useTranslation();
-
-    // const [toggle, setToggle] = useToggle();
-    //
-    // const onToggle = () => {
-    //     setToggle(true);
-    //     window.scrollTo(0, 0);
-    // };
 
     const steps = [
         {
@@ -62,28 +52,24 @@ const Steps = () => {
     ];
 
     return (
-        <>
-            { /* { toggle && <PopupMint onSetToggle = { setToggle } /> } */ }
-            <section id = { 'steps' } className = { Styles.steps }>
-                <div className = { Styles.container }>
-                    <h2 className = { Styles.caption }>{ t('steps_title') }</h2>
-                    <p className = { Styles.info }>{ t('steps_info') }</p>
-                    <div className = { Styles.steps_wrap }>
-                        {
-                            steps.map((item) => {
-                                return <Step
-                                    key = { item.id }
-                                    item = { item } />;
-                                // onToggle = { item.btnContent === 'Mint' ? onToggle : null } />;
-                            })
-                        }
-                    </div>
+        <section id = { 'steps' } className = { Styles.steps }>
+            <div className = { Styles.container }>
+                <h2 className = { Styles.caption }>{ t('steps_title') }</h2>
+                <p className = { Styles.info }>{ t('steps_info') }</p>
+                <div className = { Styles.steps_wrap }>
+                    {
+                        steps.map((item) => {
+                            return <Step
+                                key = { item.id }
+                                item = { item } />;
+                        })
+                    }
                 </div>
-                <div className = { Styles.bg_texture } />
-                <div className = { Styles.bg_texture } />
-                <div className = { Styles.bg_texture } />
-            </section>
-        </>
+            </div>
+            <div className = { Styles.bg_texture } />
+            <div className = { Styles.bg_texture } />
+            <div className = { Styles.bg_texture } />
+        </section>
     );
 };
 
