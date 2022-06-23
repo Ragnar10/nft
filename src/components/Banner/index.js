@@ -1,27 +1,27 @@
 // Localization
 import { useTranslation } from 'react-i18next';
 // Hooks
-import { useToggle } from '../../hooks';
+// import { useToggle } from '../../hooks';
 // Styles
 import Styles from './styles.module.scss';
 // Images
 // import opensea from '../../theme/assets/icons/opensea_logo.svg';
 // Components
 import Socials from '../Socials';
-import PopupMint from '../PopupMint';
+// import PopupMint from '../PopupMint';
 
 const Banner = () => {
-    const [toggle, setToggle] = useToggle();
+    // const [toggle, setToggle] = useToggle();
     const { t } = useTranslation();
 
-    const onToggle = () => {
-        setToggle(true);
-        window.scrollTo(0, 0);
-    };
+    // const onToggle = () => {
+    //     setToggle(true);
+    //     window.scrollTo(0, 0);
+    // };
 
     return (
         <>
-            { toggle && <PopupMint onSetToggle = { setToggle } /> }
+            { /* { toggle && <PopupMint onSetToggle = { setToggle } /> } */ }
             <section className = { Styles.banner }>
                 <Socials
                     classWrapper = { Styles.banner_socials }
@@ -32,10 +32,10 @@ const Banner = () => {
                         <p className = { Styles.title }>{ 'TORNADO CARD' }</p>
                         <p className = { Styles.info }>{ t('banner_info') }</p>
                         <div className = { Styles.btn_wrap }>
-                            <button id = 'minttogleoff'  className = { Styles.btn }>{ 'Mint' }</button>
-                            <button
-                                id = 'minttogleon' className = { Styles.btn }
-                                onClick = { () => onToggle() }>{ 'Mint' }</button>
+                            { /* <button id = 'minttogleoff'  className = { Styles.btn }>{ 'Mint' }</button> */ }
+                            { /* <button */ }
+                            { /*    id = 'minttogleon' className = { Styles.btn } */ }
+                            { /*    onClick = { () => onToggle() }>{ 'Mint' }</button> */ }
                             { /* <button className = { Styles.btn_opensea }> */ }
                             { /*    <img src = { opensea } alt = 'open sea icon' /> */ }
                             { /* </button> */ }
